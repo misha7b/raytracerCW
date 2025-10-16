@@ -16,55 +16,52 @@ bool Camera::readFromFile(const std::string& filename) {
     }
 
     std::string label;
+    bool inCameraBlock = false;
 
     while (file >> label) {
-        if (label == "BEGIN_CAMERA")
+
+        if (label == "BEGIN_CAMERA") {
+            inCameraBlock = true;
+            continue;
+        }
+
+        if (label == "END_CAMERA") {
             break;
+        }
+
+        if (inCameraBlock) {
+            if (label == "location") {
+                file >> location.x >> location.y >> location.z;
+            } else if (label == "gaze") {
+                file >> gaze.x >> gaze.y >> gaze.z;
+            } else if (label == "up") {
+                file >> cameraUp.x >> cameraUp.y >> cameraUp.z;
+            } else if (label == "focal_length") {
+                file >> focalLength;
+            } else if (label == "sensor_size") {
+                file >> sensorWidth >> sensorHeight;
+            } else if (label == "resolution") {
+                file >> resolutionX >> resolutionY;
+            }
+        }
     }
 
-    if (file.eof()) {
-        std::cerr << "Error: BEGIN_CAMERA not found in " << filename << std::endl;
-        return false;
-    }
-
-    std::string name;
-    file >> label >> name;                           
-    file >> label >> location.x >> location.y >> location.z;   
-    file >> label >> gaze.x >> gaze.y >> gaze.z;            
-    file >> label >> focalLength;                           
-    file >> label >> sensorWidth;                              
-    file >> label >> sensorHeight;                            
-    file >> label >> resolutionX;                               
-    file >> label >> resolutionY;                               
-
-    while (file >> label) {
-        if (label == "END_CAMERA")
-            break;
-    }
-    
     file.close();
-
-    // Calculate camera basis vectors
     calculateBasis();
 
-    std::cout << "Camera loaded" << std::endl;
-    std::cout << "Location: " << location.x << ", " << location.y << ", " << location.z << std::endl;
-
+    std::cout << "Camera loaded successfully." << std::endl;
     return true;
-
 }
 
 // Calculate camera orthonormal basis vectors (right, up, forward)
 void Camera::calculateBasis() {
 
     // forward is gaze direction
-    forward = gaze;
+    forward = gaze * -1.0f;
     forward.normalize();
 
-    Vector3 worldUp(0, 0, 1);
-
-    // right = forward x worldUp
-    right = forward.cross(worldUp);
+    // right = forward x cameraUp
+    right = forward.cross(cameraUp);
     right.normalize();
 
     // up = right x forward
@@ -74,19 +71,22 @@ void Camera::calculateBasis() {
 }
 
 // Convert pixel coordinates to ray
-Ray Camera::pixelToRay(float px, float py){
+// (px, py) range from (0, 0) to (resolutionX-1, resolutionY-1).
+Ray Camera::pixelToRay(float px, float py) const{
 
-    // Maps pixel coordinates to [-0.5, 0.5]
-    float u = px / resolutionX;
-    float v = py / resolutionY;
-    u = u - 0.5f;
-    v = v - 0.5f;
+    float u_normalized = (px + 0.5f) / resolutionX;
+    float v_normalized = (py + 0.5f) / resolutionY;
+
+    // Normalized coordinates in [-0.5, 0.5]
+    float u = u_normalized - 0.5f;
+    float v = 0.5f - v_normalized;
 
     // Scale by sensor size
-    float worldX = u * sensorWidth;
-    float worldY = v * sensorHeight;
+    float worldX_offset = u * sensorWidth;
+    float worldY_offset = v * sensorHeight;
 
-    Vector3 imagePoint = location + forward * focalLength + right * worldX + up * worldY;
+    Vector3 imagePlaneCenter = location + (forward * focalLength);
+    Vector3 imagePoint = imagePlaneCenter + (right * worldX_offset) + (up * worldY_offset);
 
     Vector3 direction = imagePoint - location;
     direction.normalize();

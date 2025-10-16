@@ -3,7 +3,6 @@
 
 int main() {
     // Create gradient image
-    std::cout << "Creating 100x100 gradient image..." << std::endl;
     Image img(100, 100);
     
     for (int y = 0; y < 100; y++) {
@@ -18,7 +17,6 @@ int main() {
     img.writePPM("../Output/gradient.ppm");
     
     //  Create RGB stripes
-    std::cout << "Creating 300x100 RGB stripes..." << std::endl;
     Image stripes(300, 100);
     
     for (int y = 0; y < 100; y++) {
@@ -36,8 +34,18 @@ int main() {
     stripes.writePPM("../Output/stripes.ppm");
     
     // Read and write 
-    std::cout << "Testing read/write..." << std::endl;
     Image loaded("../Output/gradient.ppm");
+
+    int blockSize = 10; 
+    for (int y = 0; y < loaded.height; y++) {
+        for (int x = 0; x < loaded.width; x++) {
+            bool blackSquare = ((x / blockSize) + (y / blockSize)) % 2 == 0;
+            if (blackSquare) {
+                loaded.setPixel(x, y, Pixel(0, 0, 0));
+            }
+           
+        }
+    }
     loaded.writePPM("../Output/gradient_copy.ppm");
     
     
