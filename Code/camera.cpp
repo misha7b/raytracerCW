@@ -6,7 +6,7 @@
 Camera::Camera() {
 }
 
-// Read camera data from file
+// Read scene from file
 bool Camera::readFromFile(const std::string& filename) {
     std::ifstream file(filename);
 
@@ -49,7 +49,7 @@ bool Camera::readFromFile(const std::string& filename) {
     file.close();
     calculateBasis();
 
-    std::cout << "Camera loaded successfully." << std::endl;
+    std::cout << "Camera loaded successfully" << std::endl;
     return true;
 }
 
@@ -57,7 +57,7 @@ bool Camera::readFromFile(const std::string& filename) {
 void Camera::calculateBasis() {
 
     // forward is gaze direction
-    forward = gaze * -1.0f;
+    forward = gaze;
     forward.normalize();
 
     // right = forward x cameraUp
@@ -82,8 +82,10 @@ Ray Camera::pixelToRay(float px, float py) const{
     float v = 0.5f - v_normalized;
 
     // Scale by sensor size
+    float aspectRatio = (float)resolutionX / (float)resolutionY;
     float worldX_offset = u * sensorWidth;
-    float worldY_offset = v * sensorHeight;
+    float worldY_offset = v * (sensorWidth / aspectRatio);
+    
 
     Vector3 imagePlaneCenter = location + (forward * focalLength);
     Vector3 imagePoint = imagePlaneCenter + (right * worldX_offset) + (up * worldY_offset);

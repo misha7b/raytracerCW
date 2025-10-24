@@ -57,25 +57,5 @@ int main()
     Ray brRay = camera.pixelToRay(lastPx, lastPy);
     printRayInfo("Bottom-Right Corner (" + std::to_string((int)lastPx) + ", " + std::to_string((int)lastPy) + ")", brRay);
 
-
-    std::ofstream out("rays.txt");
-
-    int nx = 10, ny = 5;
-    for (int j = 0; j < ny; ++j) {
-        for (int i = 0; i < nx; ++i) {
-            float px = (i + 0.5f) * (camera.resolutionX / float(nx));
-            float py = (j + 0.5f) * (camera.resolutionY / float(ny));
-
-            Ray r = camera.pixelToRay(px, py);
-
-            out << r.origin.x << " " << r.origin.y << " " << r.origin.z << " "
-                << r.direction.x << " " << r.direction.y << " " << r.direction.z << "\n";
-        }
-    }
-
-    out.close();
-
-
-
     return 0;
 }

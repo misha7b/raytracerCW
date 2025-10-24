@@ -58,6 +58,82 @@ struct Vector3 {
 
 };
 
+struct Matrix3 {
+
+    float m[3][3];
+
+    Matrix3(float m00, float m01, float m02,
+            float m10, float m11, float m12,
+            float m20, float m21, float m22) {
+        m[0][0] = m00; m[0][1] = m01; m[0][2] = m02;
+        m[1][0] = m10; m[1][1] = m11; m[1][2] = m12;
+        m[2][0] = m20; m[2][1] = m21; m[2][2] = m22;
+    }
+
+    Matrix3() {
+        m[0][0] = 1; m[0][1] = 0; m[0][2] = 0;
+        m[1][0] = 0; m[1][1] = 1; m[1][2] = 0;
+        m[2][0] = 0; m[2][1] = 0; m[2][2] = 1;
+    }
+
+    // Matrix * Vector
+    Vector3 operator*(const Vector3& v) const {
+        return Vector3(
+            m[0][0] * v.x + m[0][1] * v.y + m[0][2] * v.z,
+            m[1][0] * v.x + m[1][1] * v.y + m[1][2] * v.z,
+            m[2][0] * v.x + m[2][1] * v.y + m[2][2] * v.z
+        );
+    }
+
+    // Matrix * Matrix
+    Matrix3 operator*(const Matrix3& other) const {
+        Matrix3 r;
+        for (int i = 0; i < 3; ++i)
+            for (int j = 0; j < 3; ++j)
+                r.m[i][j] = m[i][0] * other.m[0][j] +
+                            m[i][1] * other.m[1][j] +
+                            m[i][2] * other.m[2][j];
+        return r;
+    }
+
+    // Matrix transpose
+    Matrix3 transpose() const {
+        Matrix3 r;
+        for (int i = 0; i < 3; ++i)
+            for (int j = 0; j < 3; ++j)
+                r.m[i][j] = m[j][i];
+        return r;
+    }
+
+    // Matrix from Euler angles
+    static Matrix3 fromEuler(float rx, float ry, float rz) {
+        
+        float cx = std::cos(rx), sx = std::sin(rx);
+        float cy = std::cos(ry), sy = std::sin(ry);
+        float cz = std::cos(rz), sz = std::sin(rz);
+
+        Matrix3 Rx(
+            1, 0, 0,
+            0, cx, -sx,
+            0, sx, cx
+        );
+        Matrix3 Ry(
+            cy, 0, sy,
+            0, 1, 0,
+            -sy, 0, cy
+        );
+        Matrix3 Rz(
+            cz, -sz, 0,
+            sz, cz, 0,
+            0, 0, 1
+        );
+
+        return Rz * Ry * Rx;
+    }
+
+};
+
+
 struct Ray {
     Vector3 origin;
     Vector3 direction;
