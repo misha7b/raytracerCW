@@ -18,8 +18,8 @@ diffuse 0.8294 0.6185 0.8617
 specular 0.5774 0.7046 0.0458
 shininess 127.1283
 roughness 0.1241
-reflectivity 0.2000
-transparency 0.2000
+reflectivity 0.2823
+transparency 0.0000
 ior 1.0000
 texture none
 END_PLANE
@@ -27,15 +27,15 @@ END_PLANE
 BEGIN_LIGHT
 LIGHT Point
 location 0.233330 0.717368 1.959181
-intensity 3.000000
-radius 0.0
+intensity 10.000000
+radius 0.0000
 END_LIGHT
 
 BEGIN_LIGHT
 LIGHT Point.001
 location 0.499728 0.244071 1.674502
-intensity 5.000000
-radius 0.0
+intensity 10.000000
+radius 0.00000
 END_LIGHT
 
 BEGIN_SPHERE
