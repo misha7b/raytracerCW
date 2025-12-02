@@ -15,7 +15,7 @@
 RenderConfig parseArguments(int argc, char* argv[]) {
     RenderConfig config;
 
-    config.inputScene = "../ASCII/Test1Glass.txt";
+    config.inputScene = "../ASCII/Test1.txt";
     config.outputImage = "../Output/output.ppm";
     config.samplesPerPixel = 1;           
     config.maxDepth = 3;
