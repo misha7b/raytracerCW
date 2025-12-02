@@ -6,8 +6,17 @@
 #include <vector>
 #include <string>
 
-bool loadScene(const std::string& filename,
-               Camera& cam,
-               std::vector<Shape*>& shapes);
+struct Light {
+    Vector3 position;
+    Vector3 intensity;
+    float radius = 0.0f;
+};
+
+struct Scene {
+    std::vector<Shape*> shapes;
+    std::vector<Light> lights;
+};
+
+bool loadScene(const std::string& filename, Camera& cam, Scene& scene);
 
 #endif

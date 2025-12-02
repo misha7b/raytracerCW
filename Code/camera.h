@@ -20,6 +20,11 @@ struct Vector3 {
     Vector3 operator-(const Vector3& v) const {
         return Vector3(x - v.x, y - v.y, z - v.z);
     }
+
+    // Negation
+    Vector3 operator-() const {
+    return Vector3(-x, -y, -z);
+    }
     
     // Scalar multiplication
     Vector3 operator*(float scalar) const {
@@ -29,6 +34,16 @@ struct Vector3 {
     // Scalar division
     Vector3 operator/(float scalar) const {
         return *this * (1.0f / scalar);
+    }
+
+    // Component-wise vector multiplication
+    Vector3 operator*(const Vector3& v) const {
+        return Vector3(x * v.x, y * v.y, z * v.z);
+    }
+
+    // Component-wise vector divison
+    Vector3 operator/(const Vector3& v) const {
+        return Vector3(x / v.x, y / v.y, z / v.z);
     }
     
     // Dot product
@@ -152,8 +167,11 @@ public:
     float focalLength;
     float sensorWidth;
     float sensorHeight;
+    float aperture;   
+    float focalDistance;
     int resolutionX;
     int resolutionY;
+
 
     Camera();
 

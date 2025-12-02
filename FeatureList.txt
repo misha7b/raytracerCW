@@ -5,3 +5,9 @@ Blender Exporter - COMPLETE
 Camera Space Transformations - COMPLETE
 
 Image Read/Write - COMPLETE
+
+# Module 2 - COMPLETE
+
+Ray Intersection - COMPLETE
+
+Acceleration Hierarchy - COMPLETE

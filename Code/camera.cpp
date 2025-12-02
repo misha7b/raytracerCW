@@ -1,6 +1,8 @@
 #include "camera.h"
 #include <iostream>
 #include <cmath>
+#include <cstdlib>
+
 
 // Constructor
 Camera::Camera() {
@@ -42,6 +44,11 @@ bool Camera::readFromFile(const std::string& filename) {
                 file >> sensorWidth >> sensorHeight;
             } else if (label == "resolution") {
                 file >> resolutionX >> resolutionY;
+            }
+            else if (label == "aperture") {
+                file >> aperture;
+            } else if (label == "focal_distance") {
+                file >> focalDistance;
             }
         }
     }
@@ -85,6 +92,7 @@ Ray Camera::pixelToRay(float px, float py) const{
     float aspectRatio = (float)resolutionX / (float)resolutionY;
     float worldX_offset = u * sensorWidth;
     float worldY_offset = v * (sensorWidth / aspectRatio);
+    //float worldY_offset = v * sensorHeight;
     
 
     Vector3 imagePlaneCenter = location + (forward * focalLength);
@@ -94,5 +102,6 @@ Ray Camera::pixelToRay(float px, float py) const{
     direction.normalize();
 
     return Ray(location, direction);
+
 
 }

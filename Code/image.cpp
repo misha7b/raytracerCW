@@ -71,6 +71,5 @@ bool Image::readPPM(const std::string& filename) {
     }
 
     file.close();
-    std::cout << "Image loaded: " << width << "x" << height << std::endl;
     return true;
 }

@@ -47,7 +47,24 @@ public:
         hit.t = t;
         hit.point = p;
         hit.normal = normal;
+        hit.shape = (Shape*)this;
+
+        hit.u = u;
+        hit.v = v;
 
         return true;
+    }
+
+    Vector3 centroid() const override {
+        return (v0 + v1 + v2 + v3) * 0.25f;
+    }
+
+    AABB bounds() const override {
+        AABB box;
+        box.expand(v0);
+        box.expand(v1);
+        box.expand(v2);
+        box.expand(v3);
+        return box;
     }
 };

@@ -6,7 +6,7 @@
 #include <iostream>
 #include <string>
 
-bool loadScene(const std::string& filename, Camera& cam, std::vector<Shape*>& shapes)
+bool loadScene(const std::string& filename, Camera& cam, Scene& scene)
 {
     std::ifstream file(filename);
     if (!file.is_open()) {
@@ -14,11 +14,7 @@ bool loadScene(const std::string& filename, Camera& cam, std::vector<Shape*>& sh
         return false;
     }
 
-    std::string label;
-
-    Vector3 translation, rotation, location;
-    float scale = 1.0f;
-    float radius = 1.0f;
+    std::string label;;
 
     while (file >> label) {
 
@@ -36,42 +32,101 @@ bool loadScene(const std::string& filename, Camera& cam, std::vector<Shape*>& sh
 
         // --- CUBE ---
         if (label == "BEGIN_CUBE") {
-            translation = Vector3(0, 0, 0);
-            rotation    = Vector3(0, 0, 0);
-            scale       = 1.0f;
 
-            while (file >> label && label != "END_CUBE") {
-                if (label == "translation")
-                    file >> translation.x >> translation.y >> translation.z;
-                else if (label == "rotation")
-                    file >> rotation.x >> rotation.y >> rotation.z;
-                else if (label == "scale")
-                    file >> scale;
+            std::string token;
+            Vector3 translation(0,0,0);
+            Vector3 rotation(0,0,0);
+            Vector3 scale(1,1,1);
+
+            Material mat;
+            
+            while (file >> token && token != "END_CUBE") {
+                if (token == "translation") file >> translation.x >> translation.y >> translation.z;
+                else if (token == "rotation") file >> rotation.x >> rotation.y >> rotation.z;
+                else if (token == "scale") file >> scale.x >> scale.y >> scale.z;
+
+                else if (token == "diffuse") file >> mat.diffuse.x >> mat.diffuse.y >> mat.diffuse.z;
+                else if (token == "specular") file >> mat.specular.x >> mat.specular.y >> mat.specular.z;
+                else if (token == "shininess") file >> mat.shininess;
+                else if (token == "roughness") file >> mat.roughness; 
+                else if (token == "reflectivity") file >> mat.reflectivity;
+                else if (token == "transparency") file >> mat.transparency;
+                else if (token == "ior") file >> mat.ior;
+
+                else if (token == "texture") {
+                    file >> mat.textureName;
+                    if (!mat.textureName.empty() && mat.textureName != "none") {
+
+                        std::string texturePath = "../Textures/" + mat.textureName;
+                        mat.texture = new Image(texturePath);
+                        
+                        if (mat.texture->width == 0) {
+                             std::cerr << "Failed to load texture: " << mat.textureName << ". Check file exists." << std::endl;
+                             delete mat.texture;
+                             mat.texture = nullptr;
+                        }
+                    }
+                }
             }
 
-            shapes.push_back(new Cube(translation, rotation, scale));
+            Cube* c = new Cube(translation, rotation, scale);
+            c->material = mat; 
+            scene.shapes.push_back(c);
             continue;
         }
 
         // --- SPHERE ---
         if (label == "BEGIN_SPHERE") {
-            location = Vector3(0, 0, 0);
-            radius   = 1.0f;
 
-            while (file >> label && label != "END_SPHERE") {
-                if (label == "location")
-                    file >> location.x >> location.y >> location.z;
-                else if (label == "radius")
-                    file >> radius;
+            std::string token;
+            Vector3 translation(0,0,0);
+            Vector3 rotation(0,0,0);
+            Vector3 scale(1,1,1);
+
+            Material mat;
+
+
+            while (file >> token && token != "END_SPHERE") {
+                if (token == "translation") file >> translation.x >> translation.y >> translation.z;
+                else if (token == "rotation") file >> rotation.x >> rotation.y >> rotation.z;
+                else if (token == "scale") file >> scale.x >> scale.y >> scale.z;
+
+                else if (token == "diffuse") file >> mat.diffuse.x >> mat.diffuse.y >> mat.diffuse.z;
+                else if (token == "specular") file >> mat.specular.x >> mat.specular.y >> mat.specular.z;
+                else if (token == "shininess") file >> mat.shininess;
+                else if (token == "roughness") file >> mat.roughness; 
+                else if (token == "reflectivity") file >> mat.reflectivity;
+                else if (token == "transparency") file >> mat.transparency;
+                else if (token == "ior") file >> mat.ior;
+
+                else if (token == "texture") {
+                    file >> mat.textureName;
+                    if (!mat.textureName.empty() && mat.textureName != "none") {
+
+                        std::string texturePath = "../Textures/" + mat.textureName;
+                        mat.texture = new Image(texturePath);
+                        if (mat.texture->width == 0) {
+                             std::cerr << "Failed to load texture: " << mat.textureName << ". Check file exists." << std::endl;
+                             delete mat.texture;
+                             mat.texture = nullptr;
+                        }
+                    }
+                }
             }
 
-            shapes.push_back(new Sphere(location, radius));
+            
+
+            Sphere* s = new Sphere(translation, rotation, scale);
+            s->material = mat;
+            scene.shapes.push_back(s);
             continue;
         }
 
         if (label == "BEGIN_PLANE") {
             std::vector<Vector3> verts;
             std::string token;
+            
+            Material mat;
 
             while (file >> token && token != "END_PLANE") {
                 if (token == "vertex") {
@@ -79,12 +134,61 @@ bool loadScene(const std::string& filename, Camera& cam, std::vector<Shape*>& sh
                     file >> x >> y >> z;
                     verts.emplace_back(x, y, z);
                 }
+
+                else if (token == "diffuse") file >> mat.diffuse.x >> mat.diffuse.y >> mat.diffuse.z;
+                else if (token == "specular") file >> mat.specular.x >> mat.specular.y >> mat.specular.z;
+                else if (token == "shininess") file >> mat.shininess;
+                else if (token == "roughness") file >> mat.roughness; 
+                else if (token == "reflectivity") file >> mat.reflectivity;
+                else if (token == "transparency") file >> mat.transparency;
+                else if (token == "ior") file >> mat.ior;
+
+                else if (token == "texture") {
+                    file >> mat.textureName;
+                    if (!mat.textureName.empty() && mat.textureName != "none") {
+
+                        std::string texturePath = "../Textures/" + mat.textureName;
+                        mat.texture = new Image(texturePath);
+                        if (mat.texture->width == 0) {
+                             std::cerr << "Failed to load texture: " << mat.textureName << ". Check file exists." << std::endl;
+                             delete mat.texture;
+                             mat.texture = nullptr;
+                        }
+                    }
+                }
             }
 
             if (verts.size() == 4) {
-                shapes.push_back(new Plane(verts[0], verts[1], verts[2], verts[3]));
+                Plane* p = new Plane(verts[0], verts[1], verts[2], verts[3]);
+                p->material = mat;
+                scene.shapes.push_back(p);
+            }
+            continue;
+
+            continue;
+        }
+
+        // --- LIGHT ---
+        if (label == "BEGIN_LIGHT") {
+            std::string token;
+            Vector3 location(0,0,0);
+            float intensity = 1.0f;
+            float radius = 0.0f;
+
+            while (file >> token && token != "END_LIGHT") {
+                if (token == "location")
+                    file >> location.x >> location.y >> location.z;
+                else if (token == "intensity")
+                    file >> intensity;
+                else if (token == "radius")
+                    file >> radius;
             }
 
+            Light light;
+            light.position = location;
+            light.intensity = Vector3(intensity, intensity, intensity);
+            light.radius = radius; 
+            scene.lights.push_back(light);
             continue;
         }
     }
