@@ -14,7 +14,6 @@ struct RenderConfig {
 
     int shadowSamples = 1;      
     int glossySamples = 1;     
-    float glossyRoughness = 0.1f;
     
     std::string inputScene = "Test1.txt";
     std::string outputImage = "output.ppm";

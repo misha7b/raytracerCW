@@ -12,6 +12,7 @@ BEGIN_LIGHT
 LIGHT CameraLight
 location 2.500000 -2.500000 2.000000
 intensity 600.000000
+radius 0.000000
 END_LIGHT
 
 BEGIN_CUBE
@@ -19,10 +20,11 @@ CUBE Cube_00
 translation 0.528764 0.670804 -0.089988
 rotation 4.375323 3.106263 1.532999
 scale 0.130188 0.192632 0.066386
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -33,10 +35,11 @@ CUBE Cube_01
 translation -0.284766 -0.579928 0.070680
 rotation 4.838343 0.669708 2.671272
 scale 0.200257 0.011608 0.227780
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -47,10 +50,11 @@ CUBE Cube_02
 translation 0.351783 0.891843 -0.031231
 rotation 0.315531 1.565759 5.330255
 scale 0.061007 0.287810 0.160208
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -61,10 +65,11 @@ CUBE Cube_03
 translation -0.126537 0.506297 0.002142
 rotation 6.207111 3.741337 5.969275
 scale 0.142374 0.242411 0.203598
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -75,10 +80,11 @@ CUBE Cube_04
 translation -0.078459 0.513562 0.059954
 rotation 3.171615 5.218620 3.442381
 scale 0.268514 0.187669 0.218589
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -89,10 +95,11 @@ CUBE Cube_05
 translation -0.203470 0.785688 0.035706
 rotation 1.628549 1.553453 4.006545
 scale 0.270190 0.225660 0.147656
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -103,10 +110,11 @@ CUBE Cube_06
 translation 0.634275 0.674365 0.122328
 rotation 1.725347 0.486842 1.795283
 scale 0.232086 0.161177 0.191757
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -117,10 +125,11 @@ CUBE Cube_07
 translation -0.641873 0.601335 -0.137808
 rotation 0.869430 1.453059 4.360215
 scale 0.088797 0.102716 0.166644
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -131,10 +140,11 @@ CUBE Cube_08
 translation -0.706277 0.684896 -0.162902
 rotation 3.409326 2.612386 1.299579
 scale 0.214862 0.028626 0.128204
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -145,10 +155,11 @@ CUBE Cube_09
 translation 0.037871 -0.566660 0.041490
 rotation 4.370100 5.383006 4.810373
 scale 0.131842 0.272403 0.179383
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -159,10 +170,11 @@ CUBE Cube_10
 translation -0.433797 -0.816802 0.014491
 rotation 4.734224 5.362371 5.990580
 scale 0.120311 0.011710 0.112010
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -173,10 +185,11 @@ CUBE Cube_100
 translation -0.941154 -0.205366 0.133838
 rotation 2.064401 0.927110 5.658204
 scale 0.070076 0.072626 0.262212
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -187,10 +200,11 @@ CUBE Cube_101
 translation 0.072445 0.825611 -0.149022
 rotation 0.816765 1.574907 1.096398
 scale 0.010822 0.258938 0.051960
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -201,10 +215,11 @@ CUBE Cube_102
 translation 0.211190 -0.660751 0.118449
 rotation 4.963620 1.494968 2.034316
 scale 0.201707 0.017476 0.014309
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -215,10 +230,11 @@ CUBE Cube_103
 translation 0.287865 -0.901477 -0.115969
 rotation 3.305493 4.685153 2.992342
 scale 0.060531 0.025196 0.225098
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -229,10 +245,11 @@ CUBE Cube_104
 translation 0.196018 0.631446 0.112046
 rotation 3.165712 5.940222 0.272471
 scale 0.235625 0.158839 0.041626
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -243,10 +260,11 @@ CUBE Cube_105
 translation -0.864064 0.408037 0.048265
 rotation 2.877966 6.057155 0.382177
 scale 0.237136 0.261424 0.161221
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -257,10 +275,11 @@ CUBE Cube_106
 translation 0.265819 -0.543374 0.145842
 rotation 3.080450 5.715819 0.461756
 scale 0.148905 0.126469 0.208968
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -271,10 +290,11 @@ CUBE Cube_107
 translation -0.105168 -0.985441 0.152566
 rotation 1.727976 3.977738 3.445425
 scale 0.033429 0.186406 0.029048
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -285,10 +305,11 @@ CUBE Cube_108
 translation -0.228225 -0.465299 -0.067126
 rotation 2.850778 3.804009 0.623157
 scale 0.104304 0.298442 0.163861
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -299,10 +320,11 @@ CUBE Cube_109
 translation -0.142184 -0.963273 0.145626
 rotation 4.831535 4.529171 1.351030
 scale 0.213516 0.257310 0.198766
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -313,10 +335,11 @@ CUBE Cube_11
 translation -0.832089 0.536157 0.020816
 rotation 3.790348 1.385685 1.378667
 scale 0.131516 0.226780 0.168378
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -327,10 +350,11 @@ CUBE Cube_110
 translation -0.421080 0.825078 0.114950
 rotation 2.849418 2.613740 0.597442
 scale 0.140951 0.076263 0.108290
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -341,10 +365,11 @@ CUBE Cube_111
 translation 0.104708 -0.565781 0.143437
 rotation 0.959059 5.799286 0.421811
 scale 0.133762 0.202881 0.118547
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -355,10 +380,11 @@ CUBE Cube_112
 translation -0.050898 -0.643611 -0.015879
 rotation 4.641992 5.100497 3.495780
 scale 0.251214 0.037037 0.038004
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -369,10 +395,11 @@ CUBE Cube_113
 translation -0.123220 -0.680962 -0.108962
 rotation 0.768002 2.221722 4.180458
 scale 0.180075 0.172860 0.105597
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -383,10 +410,11 @@ CUBE Cube_114
 translation -0.064360 0.513426 -0.068695
 rotation 6.084628 3.772488 2.209458
 scale 0.227582 0.261747 0.219108
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -397,10 +425,11 @@ CUBE Cube_115
 translation 0.557888 -0.766176 -0.088350
 rotation 1.408972 0.679956 5.311638
 scale 0.177596 0.071694 0.200454
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -411,10 +440,11 @@ CUBE Cube_116
 translation -0.761266 0.389339 0.192460
 rotation 5.071921 5.310266 6.123257
 scale 0.116593 0.231156 0.176489
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -425,10 +455,11 @@ CUBE Cube_117
 translation 0.386501 -0.709069 -0.153863
 rotation 0.164958 5.837609 5.211656
 scale 0.247344 0.187936 0.196383
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -439,10 +470,11 @@ CUBE Cube_118
 translation -0.055428 0.987283 0.185014
 rotation 1.941408 2.135181 0.038364
 scale 0.087560 0.062321 0.213783
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -453,10 +485,11 @@ CUBE Cube_119
 translation 0.181695 0.645048 -0.026174
 rotation 0.891425 3.978337 0.192624
 scale 0.262260 0.174233 0.126227
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -467,10 +500,11 @@ CUBE Cube_12
 translation -0.791937 -0.494863 0.144683
 rotation 4.267174 2.540396 1.037007
 scale 0.136392 0.018417 0.107478
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -481,10 +515,11 @@ CUBE Cube_120
 translation -0.569962 0.686696 0.042484
 rotation 2.141913 2.325112 4.533921
 scale 0.226372 0.072389 0.131751
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -495,10 +530,11 @@ CUBE Cube_121
 translation -0.682299 0.409922 0.030635
 rotation 0.330551 0.989036 3.881992
 scale 0.235282 0.174602 0.034638
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -509,10 +545,11 @@ CUBE Cube_122
 translation -0.367783 -0.552972 -0.199323
 rotation 3.051502 2.777446 1.716358
 scale 0.205451 0.088910 0.201962
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -523,10 +560,11 @@ CUBE Cube_123
 translation -0.955781 -0.175109 0.087772
 rotation 1.779690 4.263055 3.057604
 scale 0.228934 0.043007 0.134675
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -537,10 +575,11 @@ CUBE Cube_124
 translation -0.623040 -0.646749 -0.054311
 rotation 3.765670 0.048299 1.893874
 scale 0.203468 0.023171 0.124626
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -551,10 +590,11 @@ CUBE Cube_125
 translation -0.393322 -0.384419 -0.067920
 rotation 2.061654 0.048568 4.693628
 scale 0.071258 0.049798 0.084101
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -565,10 +605,11 @@ CUBE Cube_126
 translation 0.048166 -0.695066 0.087902
 rotation 3.143241 5.236119 5.065505
 scale 0.060951 0.120260 0.214065
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -579,10 +620,11 @@ CUBE Cube_127
 translation -0.429212 0.539461 -0.036643
 rotation 0.117757 5.787834 5.416797
 scale 0.030902 0.259912 0.022268
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -593,10 +635,11 @@ CUBE Cube_128
 translation -0.424231 0.609777 -0.149085
 rotation 2.624449 0.723656 0.131046
 scale 0.176970 0.176286 0.215755
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -607,10 +650,11 @@ CUBE Cube_129
 translation 0.363353 -0.658262 0.070927
 rotation 5.227773 5.779084 0.553736
 scale 0.104183 0.242383 0.189256
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -621,10 +665,11 @@ CUBE Cube_13
 translation -0.471257 -0.678919 -0.181670
 rotation 0.169435 2.475702 3.546180
 scale 0.145543 0.047012 0.190455
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -635,10 +680,11 @@ CUBE Cube_130
 translation -0.823694 -0.498631 -0.079620
 rotation 3.292154 2.486676 1.949513
 scale 0.254900 0.080562 0.180773
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -649,10 +695,11 @@ CUBE Cube_131
 translation 0.573770 0.575969 -0.085235
 rotation 3.207461 0.716451 3.204123
 scale 0.108459 0.106590 0.058758
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -663,10 +710,11 @@ CUBE Cube_132
 translation -0.703472 -0.278466 0.061882
 rotation 5.145606 5.121028 1.484521
 scale 0.272718 0.111319 0.220940
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -677,10 +725,11 @@ CUBE Cube_133
 translation -0.745218 0.208305 -0.114519
 rotation 4.776574 4.118685 1.113042
 scale 0.052469 0.067209 0.184696
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -691,10 +740,11 @@ CUBE Cube_134
 translation 0.244449 -0.738332 0.118410
 rotation 4.774449 2.820555 5.806633
 scale 0.234126 0.153294 0.228789
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -705,10 +755,11 @@ CUBE Cube_135
 translation 0.231137 0.569073 0.006181
 rotation 5.430223 3.940923 0.948493
 scale 0.173703 0.194237 0.191111
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -719,10 +770,11 @@ CUBE Cube_136
 translation -0.607196 0.596673 0.127369
 rotation 1.725826 0.352940 3.187692
 scale 0.029803 0.138240 0.097818
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -733,10 +785,11 @@ CUBE Cube_137
 translation -0.619030 -0.655862 -0.110144
 rotation 5.225704 0.482115 5.430243
 scale 0.100018 0.141055 0.026498
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -747,10 +800,11 @@ CUBE Cube_138
 translation 0.392572 0.495212 -0.102063
 rotation 2.956499 3.300957 4.962899
 scale 0.258035 0.188352 0.157050
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -761,10 +815,11 @@ CUBE Cube_139
 translation 0.060135 -0.776361 -0.170869
 rotation 4.095615 2.020212 2.988465
 scale 0.269804 0.140423 0.244847
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -775,10 +830,11 @@ CUBE Cube_14
 translation -0.354633 0.543285 -0.168083
 rotation 2.900937 0.315948 2.381980
 scale 0.017860 0.196397 0.049353
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -789,10 +845,11 @@ CUBE Cube_15
 translation 0.198431 0.620659 -0.088811
 rotation 2.382120 4.725017 5.227134
 scale 0.071381 0.104785 0.230757
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -803,10 +860,11 @@ CUBE Cube_16
 translation -0.685333 0.507033 -0.051928
 rotation 3.389270 6.282606 2.198866
 scale 0.083159 0.033753 0.015621
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -817,10 +875,11 @@ CUBE Cube_17
 translation -0.290510 0.568097 0.174662
 rotation 4.738987 5.966587 1.252620
 scale 0.198542 0.236558 0.199009
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -831,10 +890,11 @@ CUBE Cube_18
 translation -0.746951 -0.422009 -0.131545
 rotation 4.206334 3.543525 1.369512
 scale 0.015910 0.054191 0.046604
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -845,10 +905,11 @@ CUBE Cube_19
 translation 0.013730 0.892556 -0.048218
 rotation 3.815449 4.699356 0.719631
 scale 0.212845 0.232400 0.058659
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -859,10 +920,11 @@ CUBE Cube_20
 translation -0.787045 -0.610493 0.022780
 rotation 0.161342 1.960085 4.255898
 scale 0.247597 0.289769 0.041349
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -873,10 +935,11 @@ CUBE Cube_21
 translation 0.039180 -0.872883 0.110400
 rotation 0.477500 4.339258 3.941080
 scale 0.287870 0.125030 0.217354
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -887,10 +950,11 @@ CUBE Cube_22
 translation 0.384784 0.523189 -0.073819
 rotation 3.772497 0.760611 6.181676
 scale 0.039551 0.234019 0.256585
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -901,10 +965,11 @@ CUBE Cube_23
 translation -0.139199 0.656833 0.177164
 rotation 2.328366 3.179045 2.144019
 scale 0.236964 0.110689 0.134230
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -915,10 +980,11 @@ CUBE Cube_24
 translation -0.611791 0.730060 0.062175
 rotation 6.036806 3.993499 5.206922
 scale 0.256377 0.248476 0.040606
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -929,10 +995,11 @@ CUBE Cube_25
 translation 0.276124 -0.685915 -0.016459
 rotation 6.066250 1.696978 5.078065
 scale 0.215120 0.136291 0.222801
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -943,10 +1010,11 @@ CUBE Cube_26
 translation -0.246463 0.622829 0.024547
 rotation 4.593173 1.686379 5.351471
 scale 0.166070 0.150214 0.136317
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -957,10 +1025,11 @@ CUBE Cube_27
 translation -0.616206 -0.259513 0.159129
 rotation 1.532239 2.919849 3.834827
 scale 0.250912 0.035132 0.265673
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -971,10 +1040,11 @@ CUBE Cube_28
 translation -0.182059 0.718613 0.199015
 rotation 1.142534 1.332788 5.012928
 scale 0.119907 0.018323 0.256776
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -985,10 +1055,11 @@ CUBE Cube_29
 translation 0.277849 0.744946 -0.181153
 rotation 1.735847 0.063781 5.956853
 scale 0.108698 0.265293 0.213343
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -999,10 +1070,11 @@ CUBE Cube_30
 translation -0.475536 -0.325734 0.116832
 rotation 4.763689 4.339226 4.058328
 scale 0.034828 0.218822 0.151688
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1013,10 +1085,11 @@ CUBE Cube_31
 translation 0.351621 0.665570 -0.047352
 rotation 1.392331 4.346627 1.923949
 scale 0.152338 0.239951 0.036985
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1027,10 +1100,11 @@ CUBE Cube_32
 translation -0.989161 -0.136569 0.188431
 rotation 2.673519 4.686851 2.078423
 scale 0.178651 0.147246 0.163967
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1041,10 +1115,11 @@ CUBE Cube_33
 translation 0.632007 0.704380 0.088289
 rotation 0.758103 1.210043 0.751185
 scale 0.213828 0.088566 0.082907
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1055,10 +1130,11 @@ CUBE Cube_34
 translation -0.859307 -0.151241 -0.093270
 rotation 1.359585 3.042310 4.552702
 scale 0.165401 0.231035 0.063693
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1069,10 +1145,11 @@ CUBE Cube_35
 translation 0.219528 0.826153 -0.026094
 rotation 0.631624 1.219677 1.429319
 scale 0.293216 0.162145 0.092070
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1083,10 +1160,11 @@ CUBE Cube_36
 translation 0.413153 -0.647764 0.150341
 rotation 1.723549 6.121675 3.476857
 scale 0.062038 0.014103 0.164899
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1097,10 +1175,11 @@ CUBE Cube_37
 translation -0.668983 -0.001848 -0.128539
 rotation 3.084282 5.483460 3.606952
 scale 0.212251 0.046621 0.261854
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1111,10 +1190,11 @@ CUBE Cube_38
 translation 0.168527 -0.951877 -0.080622
 rotation 0.322809 5.912877 3.001661
 scale 0.146125 0.137736 0.063465
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1125,10 +1205,11 @@ CUBE Cube_39
 translation -0.743803 -0.419487 -0.138864
 rotation 3.954924 0.336836 0.937436
 scale 0.248414 0.126205 0.031484
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1139,10 +1220,11 @@ CUBE Cube_40
 translation -0.891013 -0.167269 0.111451
 rotation 0.744253 4.803140 3.809606
 scale 0.173223 0.098112 0.298236
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1153,10 +1235,11 @@ CUBE Cube_41
 translation 0.567571 0.570639 -0.070338
 rotation 2.830666 2.781698 5.404587
 scale 0.239315 0.075449 0.161546
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1167,10 +1250,11 @@ CUBE Cube_42
 translation 0.224341 -0.462903 0.151489
 rotation 3.830424 4.650118 5.953885
 scale 0.297109 0.098560 0.190098
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1181,10 +1265,11 @@ CUBE Cube_43
 translation -0.575857 0.736300 -0.176830
 rotation 0.986819 1.092103 0.471646
 scale 0.070258 0.071197 0.201524
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1195,10 +1280,11 @@ CUBE Cube_44
 translation 0.486289 -0.819775 -0.165739
 rotation 1.830036 1.454408 4.441935
 scale 0.010776 0.140646 0.182205
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1209,10 +1295,11 @@ CUBE Cube_45
 translation 0.347476 0.702676 0.104241
 rotation 5.805104 4.950069 3.927355
 scale 0.213866 0.141669 0.209342
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1223,10 +1310,11 @@ CUBE Cube_46
 translation 0.162879 0.893222 -0.009887
 rotation 3.421586 4.069209 5.707717
 scale 0.201743 0.280764 0.133290
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1237,10 +1325,11 @@ CUBE Cube_47
 translation -0.363968 0.727929 0.148973
 rotation 1.932782 4.705840 3.576433
 scale 0.249723 0.030709 0.058118
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1251,10 +1340,11 @@ CUBE Cube_48
 translation -0.158990 0.736258 0.015718
 rotation 4.396556 5.923009 3.144559
 scale 0.093697 0.046063 0.209717
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1265,10 +1355,11 @@ CUBE Cube_49
 translation -0.144478 0.881235 -0.075313
 rotation 2.714516 2.025206 1.573108
 scale 0.153201 0.033328 0.021560
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1279,10 +1370,11 @@ CUBE Cube_50
 translation -0.759394 -0.647829 -0.024760
 rotation 3.614083 5.973967 6.280499
 scale 0.036485 0.288954 0.252428
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1293,10 +1385,11 @@ CUBE Cube_51
 translation 0.170575 0.780440 -0.110121
 rotation 4.751777 2.956244 4.093555
 scale 0.204962 0.088158 0.021667
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1307,10 +1400,11 @@ CUBE Cube_52
 translation -0.649059 -0.286856 -0.107954
 rotation 3.988470 3.089604 0.573293
 scale 0.275661 0.062632 0.179746
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1321,10 +1415,11 @@ CUBE Cube_53
 translation 0.280756 0.579948 0.052441
 rotation 5.481884 2.228019 4.436213
 scale 0.110909 0.106659 0.204339
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1335,10 +1430,11 @@ CUBE Cube_54
 translation 0.216380 -0.612280 0.143854
 rotation 3.456359 2.857755 1.976170
 scale 0.093583 0.284106 0.245934
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1349,10 +1445,11 @@ CUBE Cube_55
 translation -0.181625 0.519765 0.067591
 rotation 3.233304 6.208536 4.132202
 scale 0.103749 0.291354 0.127211
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1363,10 +1460,11 @@ CUBE Cube_56
 translation 0.103295 0.632462 0.174206
 rotation 2.273127 4.752872 3.929559
 scale 0.167352 0.129842 0.064399
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1377,10 +1475,11 @@ CUBE Cube_57
 translation -0.816759 0.105771 0.113848
 rotation 5.828740 2.752765 4.387234
 scale 0.230397 0.069032 0.169274
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1391,10 +1490,11 @@ CUBE Cube_58
 translation -0.103280 0.919215 -0.161228
 rotation 1.503550 0.995119 3.461024
 scale 0.045214 0.292213 0.186573
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1405,10 +1505,11 @@ CUBE Cube_59
 translation -0.708588 0.266817 -0.013190
 rotation 5.736108 2.899363 0.738062
 scale 0.170153 0.037031 0.297755
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1419,10 +1520,11 @@ CUBE Cube_60
 translation -0.610959 -0.650797 0.193666
 rotation 3.197337 1.717979 5.244725
 scale 0.251322 0.154529 0.217815
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1433,10 +1535,11 @@ CUBE Cube_61
 translation -0.510176 0.252059 -0.064279
 rotation 2.410142 5.792268 3.193372
 scale 0.294271 0.080682 0.169867
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1447,10 +1550,11 @@ CUBE Cube_62
 translation -0.356744 0.876920 -0.123916
 rotation 4.963755 2.607160 5.870056
 scale 0.265005 0.260568 0.090112
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1461,10 +1565,11 @@ CUBE Cube_63
 translation -0.714501 0.275588 -0.088582
 rotation 1.875882 3.687839 6.276289
 scale 0.157244 0.247959 0.092023
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1475,10 +1580,11 @@ CUBE Cube_64
 translation 0.271954 -0.602823 -0.022748
 rotation 2.168478 3.467799 3.414472
 scale 0.151996 0.053093 0.166188
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1489,10 +1595,11 @@ CUBE Cube_65
 translation -0.920085 -0.222385 -0.179765
 rotation 4.382512 3.592710 1.467516
 scale 0.142050 0.103315 0.064709
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1503,10 +1610,11 @@ CUBE Cube_66
 translation 0.012693 -0.999650 0.187598
 rotation 4.431077 5.098232 2.425804
 scale 0.234908 0.022658 0.225964
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1517,10 +1625,11 @@ CUBE Cube_67
 translation 0.070305 -0.969450 -0.133476
 rotation 3.112242 0.232601 3.155988
 scale 0.202470 0.248017 0.294437
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1531,10 +1640,11 @@ CUBE Cube_68
 translation -0.172457 0.764519 -0.039584
 rotation 2.766526 3.304648 2.870964
 scale 0.181152 0.262213 0.263515
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1545,10 +1655,11 @@ CUBE Cube_69
 translation -0.456380 0.292735 0.194124
 rotation 0.969880 2.949896 6.089686
 scale 0.219509 0.128894 0.199887
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1559,10 +1670,11 @@ CUBE Cube_70
 translation -0.154144 -0.652029 -0.017997
 rotation 5.351799 5.355419 5.399406
 scale 0.108183 0.210884 0.198453
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1573,10 +1685,11 @@ CUBE Cube_71
 translation 0.415433 -0.628228 0.198169
 rotation 4.771462 5.481344 0.225561
 scale 0.120203 0.101832 0.218428
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1587,10 +1700,11 @@ CUBE Cube_72
 translation -0.420941 -0.699739 -0.138081
 rotation 6.267012 4.692071 2.726723
 scale 0.029842 0.193037 0.277069
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1601,10 +1715,11 @@ CUBE Cube_73
 translation 0.409383 -0.552210 0.031672
 rotation 2.787714 4.360538 5.676381
 scale 0.038549 0.193787 0.263048
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1615,10 +1730,11 @@ CUBE Cube_74
 translation -0.317231 -0.745662 -0.177134
 rotation 2.355196 0.914642 3.337416
 scale 0.023337 0.240882 0.095077
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1629,10 +1745,11 @@ CUBE Cube_75
 translation -0.829463 -0.011142 0.141088
 rotation 0.496173 5.471647 3.893755
 scale 0.174119 0.239831 0.059295
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1643,10 +1760,11 @@ CUBE Cube_76
 translation 0.342851 -0.500528 -0.167955
 rotation 2.897490 1.595787 1.604265
 scale 0.079841 0.274720 0.051504
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1657,10 +1775,11 @@ CUBE Cube_77
 translation -0.562458 -0.270203 0.070085
 rotation 4.257555 0.992590 2.775470
 scale 0.012725 0.243344 0.271351
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1671,10 +1790,11 @@ CUBE Cube_78
 translation 0.142787 0.637193 0.156115
 rotation 2.666012 1.571414 5.311201
 scale 0.110214 0.180396 0.195292
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1685,10 +1805,11 @@ CUBE Cube_79
 translation -0.594964 -0.284041 0.047753
 rotation 1.490407 3.593496 3.611650
 scale 0.067773 0.121561 0.150130
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1699,10 +1820,11 @@ CUBE Cube_80
 translation -0.693630 -0.288610 0.009113
 rotation 4.135780 1.724611 3.555837
 scale 0.297881 0.095617 0.293604
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1713,10 +1835,11 @@ CUBE Cube_81
 translation -0.171856 0.959945 0.086477
 rotation 3.810164 3.121030 5.680975
 scale 0.208882 0.225954 0.024223
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1727,10 +1850,11 @@ CUBE Cube_82
 translation -0.577582 0.308890 0.068676
 rotation 2.213698 3.999988 3.901174
 scale 0.092996 0.241669 0.186049
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1741,10 +1865,11 @@ CUBE Cube_83
 translation -0.446390 0.525103 0.100746
 rotation 5.267427 3.947399 5.676253
 scale 0.206552 0.219069 0.201163
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1755,10 +1880,11 @@ CUBE Cube_84
 translation -0.541106 0.107759 0.199382
 rotation 3.641570 4.601552 0.566325
 scale 0.197439 0.099591 0.137839
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1769,10 +1895,11 @@ CUBE Cube_85
 translation 0.425465 0.903356 -0.114738
 rotation 0.830384 3.389199 6.104049
 scale 0.095582 0.226769 0.060936
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1783,10 +1910,11 @@ CUBE Cube_86
 translation 0.303966 -0.597081 0.152346
 rotation 1.614591 5.181679 3.027539
 scale 0.163947 0.274911 0.250837
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1797,10 +1925,11 @@ CUBE Cube_87
 translation -0.779006 0.550092 -0.136901
 rotation 0.723633 6.050037 0.884402
 scale 0.243882 0.226502 0.108227
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1811,10 +1940,11 @@ CUBE Cube_88
 translation -0.537218 -0.765967 0.044671
 rotation 6.157159 6.077535 5.055373
 scale 0.290285 0.259441 0.220023
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1825,10 +1955,11 @@ CUBE Cube_89
 translation -0.744514 -0.660397 -0.196871
 rotation 3.371383 2.857505 4.227505
 scale 0.116075 0.239298 0.014036
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1839,10 +1970,11 @@ CUBE Cube_90
 translation -0.543783 0.753079 0.065355
 rotation 5.908028 0.680759 1.469146
 scale 0.204979 0.179522 0.248501
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1853,10 +1985,11 @@ CUBE Cube_91
 translation 0.148454 0.965484 -0.153829
 rotation 5.750722 1.390891 0.397204
 scale 0.017257 0.266428 0.172808
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1867,10 +2000,11 @@ CUBE Cube_92
 translation -0.556716 -0.142634 -0.091061
 rotation 2.565398 0.878245 5.945537
 scale 0.248918 0.273722 0.097635
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1881,10 +2015,11 @@ CUBE Cube_93
 translation -0.435092 -0.717159 -0.118561
 rotation 5.574815 0.852402 2.850328
 scale 0.098266 0.152861 0.038186
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1895,10 +2030,11 @@ CUBE Cube_94
 translation -0.377113 0.763848 -0.004587
 rotation 2.633451 4.663814 0.970896
 scale 0.204441 0.225511 0.284332
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1909,10 +2045,11 @@ CUBE Cube_95
 translation 0.057968 -0.962103 -0.163081
 rotation 2.564268 5.978586 0.205562
 scale 0.130317 0.038716 0.151911
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1923,10 +2060,11 @@ CUBE Cube_96
 translation -0.373343 0.654444 -0.198582
 rotation 5.374952 0.624264 4.308256
 scale 0.117454 0.138581 0.285661
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1937,10 +2075,11 @@ CUBE Cube_97
 translation -0.726666 -0.547992 -0.095218
 rotation 2.501585 1.192602 0.767552
 scale 0.167895 0.293574 0.114015
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1951,10 +2090,11 @@ CUBE Cube_98
 translation -0.871241 -0.216477 -0.028925
 rotation 4.031948 3.751979 0.134193
 scale 0.255930 0.141868 0.202203
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1965,10 +2105,11 @@ CUBE Cube_99
 translation 0.211815 0.460854 0.153243
 rotation 3.547348 0.431090 4.807626
 scale 0.238170 0.080635 0.046518
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1980,10 +2121,11 @@ vertex -1.785503 -1.785503 -1.305415
 vertex 1.785503 -1.785503 -1.305415
 vertex -1.785503 1.785503 -1.305415
 vertex 1.785503 1.785503 -1.305415
-diffuse 0.8000 0.8000 0.8000
+diffuse 0.6400 0.2400 0.0800
 specular 1.0000 1.0000 1.0000
 shininess 156.7302
-reflectivity 0.0000
+roughness 0.1118
+reflectivity 0.4000
 transparency 0.0000
 ior 1.0000
 texture tex2.ppm
@@ -1993,5 +2135,6 @@ BEGIN_LIGHT
 LIGHT TopLight
 location 0.000000 0.000000 2.000000
 intensity 800.000000
+radius 0.000000
 END_LIGHT
 

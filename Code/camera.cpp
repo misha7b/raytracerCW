@@ -3,6 +3,32 @@
 #include <cmath>
 #include <cstdlib>
 
+#include "utils.h"
+
+static void sampleUnitDisk(float& x, float& y, int gridX, int gridY, int gridSize) {
+    float cellSize = 1.0f / static_cast<float>(gridSize);
+
+    float r1 = (gridX * cellSize) + (randomFloat() * cellSize);
+    float r2 = (gridY * cellSize) + (randomFloat() * cellSize);
+
+    // Map [0,1] to [-1,1] 
+    float sx = 2.0f * r1 - 1.0f;
+    float sy = 2.0f * r2 - 1.0f;
+
+    if (sx == 0 && sy == 0) { x = 0; y = 0; return; }
+
+    float r, theta;
+    if (sx * sx > sy * sy) {
+        r = sx;
+        theta = (M_PI / 4.0f) * (sy / sx);
+    } else {
+        r = sy;
+        theta = (M_PI / 2.0f) - (M_PI / 4.0f) * (sx / sy);
+    }
+
+    x = r * cos(theta);
+    y = r * sin(theta);
+}
 
 // Constructor
 Camera::Camera() {
@@ -50,6 +76,9 @@ bool Camera::readFromFile(const std::string& filename) {
             } else if (label == "focal_distance") {
                 file >> focalDistance;
             }
+            else if (label == "velocity") {
+                file >> velocity.x >> velocity.y >> velocity.z; 
+            }
         }
     }
 
@@ -79,7 +108,7 @@ void Camera::calculateBasis() {
 
 // Convert pixel coordinates to ray
 // (px, py) range from (0, 0) to (resolutionX-1, resolutionY-1).
-Ray Camera::pixelToRay(float px, float py) const{
+Ray Camera::pixelToRay(float px, float py, int sX, int sY, int gridSide) const {
 
     float u_normalized = (px + 0.5f) / resolutionX;
     float v_normalized = (py + 0.5f) / resolutionY;
@@ -93,15 +122,41 @@ Ray Camera::pixelToRay(float px, float py) const{
     float worldX_offset = u * sensorWidth;
     float worldY_offset = v * (sensorWidth / aspectRatio);
     //float worldY_offset = v * sensorHeight;
-    
 
-    Vector3 imagePlaneCenter = location + (forward * focalLength);
-    Vector3 imagePoint = imagePlaneCenter + (right * worldX_offset) + (up * worldY_offset);
+    Vector3 currentPos = location;
 
-    Vector3 direction = imagePoint - location;
+    // motion blur
+    if (std::abs(velocity.x) > 1e-6 || std::abs(velocity.y) > 1e-6 || std::abs(velocity.z) > 1e-6) {
+        float time = randomFloat(); // random time between 0.0 and 1.0
+        currentPos = location + (velocity * time);
+    }
+
+    Vector3 imagePlaneCenter = currentPos + (forward * focalLength);
+    Vector3 targetPoint = imagePlaneCenter + (right * worldX_offset) + (up * worldY_offset);
+
+    Vector3 direction = targetPoint - currentPos;
     direction.normalize();
 
-    return Ray(location, direction);
+    // depth of field
+    if (aperture > 0.0f) {
+        float t = focalDistance / forward.dot(direction);
+        Vector3 focalPoint = currentPos + (direction * t);
+
+        float lensRadius = aperture * 0.5f;
+        float diskX, diskY;
+
+        sampleUnitDisk(diskX, diskY, sX, sY, gridSide);
+        
+        Vector3 lensOffset = (right * diskX * lensRadius) + (up * diskY * lensRadius);
+        Vector3 lensOrigin = currentPos + lensOffset;
+
+        Vector3 lensDir = focalPoint - lensOrigin;
+        lensDir.normalize();
+
+        return Ray(lensOrigin, lensDir);
+    }
+
+    return Ray(currentPos, direction);
 
 
 }

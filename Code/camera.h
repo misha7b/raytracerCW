@@ -164,6 +164,7 @@ public:
     Vector3 location;
     Vector3 gaze;
     Vector3 cameraUp;
+    Vector3 velocity;
     float focalLength;
     float sensorWidth;
     float sensorHeight;
@@ -177,7 +178,7 @@ public:
 
     bool readFromFile(const std::string& filename);
 
-    Ray pixelToRay(float px, float py) const;
+    Ray pixelToRay(float px, float py, int sX, int sY, int gridSide) const;
 
 private:
 

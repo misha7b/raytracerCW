@@ -1,0 +1,111 @@
+BEGIN_CAMERA
+CAMERA Camera
+location 2.500000 -2.500000 1.500000
+gaze -0.534523 0.801784 -0.267261
+up -0.148250 0.222375 0.963624
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 1920 1080
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 4.0
+END_CAMERA
+
+BEGIN_PLANE
+PLANE Ground
+vertex -2.000000 -2.000000 0.000000
+vertex  2.000000 -2.000000 0.000000
+vertex -2.000000  2.000000 0.000000
+vertex  2.000000  2.000000 0.000000
+diffuse 0.8 0.8 0.8
+specular 0.3 0.3 0.3
+shininess 100.0
+reflectivity 0.2
+transparency 0.0
+ior 1.0
+END_PLANE
+
+BEGIN_LIGHT
+LIGHT KeyLight
+location 2.0 2.0 3.0
+intensity 25.0
+radius 0.125
+END_LIGHT
+
+BEGIN_SPHERE
+SPHERE Glass_01
+translation 1.000000 0.000000 0.500000
+rotation 0 0 0
+scale 0.20 0.20 0.20
+diffuse 0.9 0.3 0.3
+specular 1.0 1.0 1.0
+shininess 200.0
+reflectivity 0.1
+transparency 0.0
+ior 1.10
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Glass_02
+translation 0.500000 0.866025 0.500000
+rotation 0 0 0
+scale 0.22 0.22 0.22
+diffuse 0.3 0.9 0.3
+specular 1.0 1.0 1.0
+shininess 200.0
+reflectivity 0.1
+transparency 0.9
+ior 1.25
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Glass_03
+translation -0.500000 0.866025 0.500000
+rotation 0 0 0
+scale 0.18 0.18 0.18
+diffuse 0.3 0.3 0.9
+specular 1.0 1.0 1.0
+shininess 200.0
+reflectivity 0.1
+transparency 0.0
+ior 1.40
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Glass_04
+translation -1.000000 0.000000 0.500000
+rotation 0 0 0
+scale 0.25 0.25 0.25
+diffuse 0.9 0.9 0.3
+specular 1.0 1.0 1.0
+shininess 200.0
+reflectivity 0.1
+transparency 0.9
+ior 1.55
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Glass_05
+translation -0.500000 -0.866025 0.500000
+rotation 0 0 0
+scale 0.21 0.21 0.21
+diffuse 0.9 0.3 0.9
+specular 1.0 1.0 1.0
+shininess 200.0
+reflectivity 0.1
+transparency 0.0
+ior 1.75
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Glass_06
+translation 0.500000 -0.866025 0.500000
+rotation 0 0 0
+scale 0.23 0.23 0.23
+diffuse 0.3 0.9 0.9
+specular 1.0 1.0 1.0
+shininess 200.0
+reflectivity 0.1
+transparency 0.9
+ior 2.00
+END_SPHERE

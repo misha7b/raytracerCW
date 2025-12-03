@@ -59,6 +59,25 @@ def write_material(file, obj):
 
                         if shader_types == {'BSDF_DIFFUSE', 'BSDF_GLOSSY'}:
                             reflectivity = fac
+                            
+                elif node.type == 'MIX_RGB':
+    
+                    if node.blend_type == 'MULTIPLY':
+
+      
+                        fac = node.inputs['Fac'].default_value
+
+                        if not node.inputs['Color1'].is_linked:
+                            c1 = node.inputs['Color1'].default_value
+                            diffuse = [float(c1[0]), float(c1[1]), float(c1[2])]
+
+                        if not node.inputs['Color2'].is_linked:
+                            c2 = node.inputs['Color2'].default_value
+                            diffuse = [
+                                diffuse[0] * float(c2[0]),
+                                diffuse[1] * float(c2[1]),
+                                diffuse[2] * float(c2[2])
+                            ]
 
                 elif node.type == 'TEX_IMAGE':
                     if node.image and node.image.filepath:
@@ -97,6 +116,10 @@ with open(output_path, 'w') as file:
             gaze_vector = obj.matrix_world.to_3x3() @ mathutils.Vector((0.0, 0.0, -1.0))
             up_vector = obj.matrix_world.to_3x3() @ mathutils.Vector((0.0, 1.0, 0.0))
             
+            velocity = obj.get("velocity", (0.0, 0.0, 0.0))
+            aperture = obj.get("aperture", 0.0)           
+            focal_d  = obj.get("focal_distance", 0.0) 
+            
             file.write("BEGIN_CAMERA\n")
             file.write(f"CAMERA {obj.name}\n")
             file.write(f"location {obj.location.x:.6f} {obj.location.y:.6f} {obj.location.z:.6f}\n")
@@ -105,6 +128,9 @@ with open(output_path, 'w') as file:
             file.write(f"focal_length {cam_data.lens:.6f}\n")
             file.write(f"sensor_size {cam_data.sensor_width:.6f} {cam_data.sensor_height:.6f}\n")
             file.write(f"resolution {scene.render.resolution_x} {scene.render.resolution_y}\n")
+            file.write(f"velocity {velocity[0]} {velocity[1]} {velocity[2]}\n")
+            file.write(f"aperture {aperture}\n")
+            file.write(f"focal_distance {focal_d}\n")
             file.write("END_CAMERA\n\n")
             
         elif obj.type == "LIGHT":
