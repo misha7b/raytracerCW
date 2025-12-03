@@ -1,24 +1,38 @@
-#include "raytracer.h"
+
 #include <algorithm>
 #include <cmath>
 #include <iostream>
 #include <random>
 
+#include "raytracer.h"
+#include "utils.h"
+
 const float SHADOW_BIAS = 0.001;
 const float REFLECTION_BIAS = 0.001;
 const Vector3 BACKGROUND_COLOR(0.02f, 0.02f, 0.02f);
 
-// random number generator
-float randomFloat() {
-    static std::mt19937 generator(42); 
-    static std::uniform_real_distribution<float> distribution(0.0f, 1.0f);
-    return distribution(generator);
-}
-
-Vector3 samplePointOnLight(const Light& light, int gridX, int gridY, int gridSize) {
+// Sample a random point on light source
+Vector3 samplePointOnLight(const Light& light, const Vector3& target, int gridX, int gridY, int gridSize) {
     if (light.radius <= 0.0f) return light.position;
-    float cellSize = 1.0f / static_cast<float>(gridSize);
 
+    // Calculate direction from light to targer
+    Vector3 forward = target - light.position;
+    forward.normalize();
+
+    Vector3 globalUp = Vector3(0, 1, 0);
+    
+    if (std::abs(forward.y) > 0.99f) {
+        globalUp = Vector3(1, 0, 0);
+    }
+
+    Vector3 right = globalUp.cross(forward);
+    right.normalize();
+
+    Vector3 up = forward.cross(right);
+    up.normalize();
+
+    // Stratified sampling
+    float cellSize = 1.0f / static_cast<float>(gridSize);
     float r1 = (gridX * cellSize) + (randomFloat() * cellSize);
     float r2 = (gridY * cellSize) + (randomFloat() * cellSize);
 
@@ -28,9 +42,10 @@ Vector3 samplePointOnLight(const Light& light, int gridX, int gridY, int gridSiz
     float x = r * cos(theta);
     float y = r * sin(theta);
 
-    return light.position + Vector3(x, y, 0);
+    return light.position + (right * x) + (up * y);
 }
 
+// Sample a random direction
 Vector3 sampleUnitSphere(int gridX, int gridY, int gridSize) {
     float cellSize = 1.0f / static_cast<float>(gridSize);
 
@@ -46,23 +61,41 @@ Vector3 sampleUnitSphere(int gridX, int gridY, int gridSize) {
 
     return Vector3(r * cos(theta), r * sin(theta), z);
 }
+// https://knarkowicz.wordpress.com/2016/01/06/aces-filmic-tone-mapping-curve/
+Vector3 acesToneMapping(const Vector3& x) {
+    const float a = 2.51f;
+    const float b = 0.03f;
+    const float c = 2.43f;
+    const float d = 0.59f;
+    const float e = 0.14f;
+
+    return Vector3(
+        std::clamp((x.x * (a * x.x + b)) / (x.x * (c * x.x + d) + e), 0.0f, 1.0f),
+        std::clamp((x.y * (a * x.y + b)) / (x.y * (c * x.y + d) + e), 0.0f, 1.0f),
+        std::clamp((x.z * (a * x.z + b)) / (x.z * (c * x.z + d) + e), 0.0f, 1.0f)
+    );
+}
 
 Vector3 Raytracer::traceRay(const Ray& ray, int depth) const {
     HitInfo hit;
     hit.hit = false;
 
+    // Intersection test
     if (config.useBVH && bvhRoot)
         bvhRoot->intersect(ray, hit);
     else
         for (auto* s : scene->shapes)
             s->intersect(ray, hit);
 
+    // If no hit, return background colour
     if (!hit.hit)
         return BACKGROUND_COLOR;
 
+    // Shade
     return shade(ray, hit, depth);
 }
 
+// Compute percentage of light visible
 Vector3 computeShadowFactor(
     const Scene* scene,
     const BVHNode* bvh,
@@ -71,68 +104,68 @@ Vector3 computeShadowFactor(
     const Light& light,
     const RenderConfig& config
 ) {
+    // Determine sampling quality
+    bool hardShadows = (config.shadowSamples <= 1 || light.radius <= 0.0f);
     int gridSize = static_cast<int>(std::sqrt(config.shadowSamples));
     if (gridSize < 1) gridSize = 1;
-
-    bool hardShadows = (config.shadowSamples <= 1 || light.radius <= 0.0f);
-    int samplesX = hardShadows ? 1 : gridSize;
-    int samplesY = hardShadows ? 1 : gridSize;
-    float totalSamples = (float)(samplesX * samplesY);
-
+    
     Vector3 accumulatedTransmission(0.0f, 0.0f, 0.0f);
+    float totalSamples = (float)(gridSize * gridSize);
 
-    for (int y = 0; y < samplesY; ++y) {
-        for (int x = 0; x < samplesX; ++x) {
+
+    for (int y = 0; y < gridSize; ++y) {
+        for (int x = 0; x < gridSize; ++x) {
 
             Vector3 lightPos;
-            if (hardShadows) lightPos = light.position;
-            else lightPos = samplePointOnLight(light, x, y, gridSize);
+            
+            if (hardShadows) {
+                lightPos = light.position;
+            } 
+            else {
+                lightPos = samplePointOnLight(light, origin, x, y, gridSize);
+            }
 
             Vector3 L = lightPos - origin;
             float dist = L.length();
             L.normalize();
 
-            Ray currentRay(origin + normal * SHADOW_BIAS, L);
+            Ray shadowRay(origin + L * SHADOW_BIAS, L);
 
             Vector3 rayThroughput(1.0f, 1.0f, 1.0f);
-            bool completelyBlocked = false;
+            bool blocked = false;
 
+            // Trace shadow ray
             int maxPassthrough = 10; 
             while (maxPassthrough-- > 0) {
                 HitInfo h;
-                h.hit = false;
+                if (bvh) bvh->intersect(shadowRay, h);
+                else for (auto* s : scene->shapes) s->intersect(shadowRay, h);
 
-                if (bvh) bvh->intersect(currentRay, h);
-                else for (auto* s : scene->shapes) s->intersect(currentRay, h);
-
-                if (!h.hit || h.t > dist) {
-                    break;
-                }
+                if (!h.hit || h.t > dist) break;
                 
-                // if hit transparent object
+                // If hit glass
                 if (h.shape->material.transparency > 0.0f) {
-                
-                    Vector3 transmissionColor = h.shape->material.diffuse;
-                    
-                    rayThroughput = rayThroughput * transmissionColor * h.shape->material.transparency;
+    
+                    rayThroughput = rayThroughput * h.shape->material.diffuse;
 
                     if (rayThroughput.length() < 0.01f) {
-                        completelyBlocked = true;
+                        blocked = true;
                         break;
                     }
 
-                    currentRay.origin = h.point + currentRay.direction * SHADOW_BIAS;
-                    dist -= h.t; 
-                } 
-                // if hit opaque object
-                else {
-                    
-                    completelyBlocked = true;
+                    shadowRay.origin = h.point + shadowRay.direction * SHADOW_BIAS;
+
+                    Vector3 newL = lightPos - shadowRay.origin;
+                    dist = newL.length();
+
+                }
+                                else {
+                    blocked = true;
                     break;
                 }
             }
 
-            if (!completelyBlocked) {
+            if (!blocked) {
                 accumulatedTransmission = accumulatedTransmission + rayThroughput;
             }
         }
@@ -148,10 +181,10 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
     
     Vector3 diffuseColor = mat.diffuse; 
 
-    // texture lookup
+    // Texture lookup
     if (mat.texture != nullptr) {
         
-        // calculate tiling/wrapping
+        // Calculate tiling/wrapping
         float u_tiled = hit.u - std::floor(hit.u);
         float v_tiled = hit.v - std::floor(hit.v);
         
@@ -164,6 +197,7 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
     
         Pixel p = mat.texture->getPixel(texX, texY);
         
+        // Convert Texture from sRGB to Linear Space
         auto srgbToLinear = [](float c) {
             return powf(c / 255.0f, 2.2f);
         };
@@ -177,7 +211,8 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
         diffuseColor = diffuseColor * textureColour; 
     }
     
-    Vector3 localColour = diffuseColor * 0.1f;
+    // Ambient term
+    Vector3 finalColour = diffuseColor * 0.1f;
 
     // Surface normal and view direction
     Vector3 N = hit.normal;
@@ -185,23 +220,25 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
     Vector3 V = (-ray.direction);
     V.normalize();
 
-
+    // Blinn-Phong
     for (const auto& light : scene->lights) {
 
+        // Calculate shadows
         Vector3 shadowColor = computeShadowFactor(scene, bvhRoot, hit.point, N, light, config);
 
+        // If completely in shadow, skip
         if (shadowColor.x <= 0.001f && shadowColor.y <= 0.001f && shadowColor.z <= 0.001f) {
                 continue;
             }
 
-        
         Vector3 L = light.position - hit.point;
         float distToLight = L.length();
         L.normalize();
 
+        // Inverse square law
         float attenuation = 1.0f / (1.0f + distToLight * distToLight);
 
-        // blinn-phong
+        // Blinn-Phong
         Vector3 H = (L + V);
         H.normalize();
 
@@ -210,11 +247,10 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
 
         Vector3 incomingLight = light.intensity * attenuation * shadowColor;
 
-        localColour = localColour + (diffuseColor * diff + mat.specular * spec) * incomingLight;
+        finalColour = finalColour + (diffuseColor * diff + mat.specular * spec) * incomingLight;
     }
 
-    Vector3 finalColour = localColour;
-
+    // Refraction
     if (mat.transparency > 0.0f && depth < config.maxDepth) {
         
         float ior = mat.ior;
@@ -223,21 +259,19 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
         float cosi = ray.direction.dot(N);
         
         if (cosi < 0) {
-            // Entering the object
+            // Entering material
             cosi = -cosi;
             eta = 1.0f / ior;
         } else {
-            // Exiting the object
+            // Exiting material
             normal = -N;
             eta = ior / 1.0f;
         }
 
         float k = 1.0f - eta * eta * (1.0f - cosi * cosi);
-
-        Vector3 transmissionColor; 
+        Vector3 transmissionColor(0,0,0); 
 
         if (k < 0.0f) {
-    
             Vector3 R = ray.direction - normal * (2.0f * ray.direction.dot(normal));
             R.normalize();
             
@@ -245,6 +279,7 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
             transmissionColor = traceRay(internalRay, depth + 1);
         } 
         else {
+            // Total Internal Reflection
             Vector3 refractDir = ray.direction * eta + normal * (eta * cosi - sqrtf(k));
             refractDir.normalize();
 
@@ -255,18 +290,21 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
         finalColour = (finalColour * (1.0f - mat.transparency)) + (transmissionColor * mat.transparency);
     }
 
+    // Reflection
     if (mat.reflectivity > 0.0f && depth < config.maxDepth) {
         
         Vector3 R = ray.direction - N * (2.0f * ray.direction.dot(N));
         R.normalize();
 
+        // Check if Glossy or Perfect Mirror
         if (mat.roughness <= 0.001f || config.glossySamples <= 1) {
-            // perfect mirror
+
             Ray reflectedRay(hit.point + N * REFLECTION_BIAS, R);
             Vector3 reflectedColor = traceRay(reflectedRay, depth + 1);
             finalColour = (finalColour * (1.0f - mat.reflectivity)) + (reflectedColor * mat.reflectivity);
         }
         else {
+            // Glossy Reflections
             Vector3 accumulatedReflection(0, 0, 0);
             
             int samples = config.glossySamples;
@@ -279,7 +317,7 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
 
             for (int y = 0; y < gridSize; ++y) {
                 for (int x = 0; x < gridSize; ++x) {
-                    
+                    // Jitter direction
                     Vector3 randDir = sampleUnitSphere(x, y, gridSize);
                     
                     Vector3 glossyDir = R + (randDir * mat.roughness);
@@ -305,6 +343,7 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
     return finalColour;
 }
 
+// Render loop
 void Raytracer::render(Image& img) const {
 
     int width  = img.getWidth();  
@@ -318,7 +357,8 @@ void Raytracer::render(Image& img) const {
 
     for (int y = 0; y < height; ++y) {
 
-        float progress = (float)y / (float)height;
+        // Progress bar
+        float progress = (float)(y+1)  / (float)height;
         
         int barWidth = 60; 
 
@@ -336,18 +376,18 @@ void Raytracer::render(Image& img) const {
 
             Vector3 pixelColour(0, 0, 0);
             
-            
+            // Anti-Aliasing Loop
             for (int sy = 0; sy < gridSide; ++sy) {
                 for (int sx = 0; sx < gridSide; ++sx) {
                     
                     float u, v;
 
                     if (spp == 1) {
-                        // centre pixel
+                        // Centre pixel
                         u = x + 0.5f;
                         v = y + 0.5f;
                     } else {
-                        // jitter
+                        // Stratified Jitter
                         float r1 = randomFloat(); 
                         float r2 = randomFloat();
                         u = x + (sx * subStep) + (r1 * subStep);
@@ -361,8 +401,12 @@ void Raytracer::render(Image& img) const {
             
             pixelColour = pixelColour / static_cast<float>(gridSide * gridSide);
 
-            pixelColour = pixelColour / (pixelColour + Vector3(1.0f, 1.0f, 1.0f));
+            pixelColour = pixelColour * config.exposure;
 
+            // Tone mapping 
+            pixelColour = acesToneMapping(pixelColour);
+
+            // Gamma Correction
             float invGamma = 1.0f / 2.2f;
             pixelColour.x = powf(pixelColour.x, invGamma);
             pixelColour.y = powf(pixelColour.y, invGamma);
@@ -376,6 +420,7 @@ void Raytracer::render(Image& img) const {
             ));
         }
     }
+
 
     std::cout << "Render complete" << std::endl;
 }

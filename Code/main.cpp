@@ -22,7 +22,8 @@ void printUsage(const char* progName) {
               << "  -d <int>         Max recursion depth (default: 3)\n"
               << "  -no-bvh          Disable BVH acceleration\n"
               << "  --shadow-samples <int> Number of shadow rays for distributed RT\n"
-              << "  --glossy-samples <int> Number of reflection rays for glossy materials\n";
+              << "  --glossy-samples <int> Number of reflection rays for glossy materials\n"
+              << "  -exposure <val>  Exposure multiplier (default: 1.0)\n";
 }
 
 
@@ -37,7 +38,8 @@ RenderConfig parseArguments(int argc, char* argv[]) {
     config.useBVH = true;
     config.width = 0;   // use scene file defaults         
     config.height = 0;  // use scene file defaults 
-    config.shadowSamples = 1;     
+    config.shadowSamples = 1;  
+    config.exposure = 1.0f;   
 
     for (int i = 1; i < argc; ++i) {
 
@@ -46,8 +48,13 @@ RenderConfig parseArguments(int argc, char* argv[]) {
             exit(0);
         }
         else if (strcmp(argv[i], "-i") == 0 && i + 1 < argc) {
-            config.inputScene = argv[++i];
-        } 
+            std::string filename = argv[++i];
+            if (filename.find('/') == std::string::npos && filename.find('\\') == std::string::npos) {
+                config.inputScene = "../ASCII/" + filename;
+            } else {
+                config.inputScene = filename;
+            }
+        }
         else if (strcmp(argv[i], "-o") == 0 && i + 1 < argc) {
             std::string filename = argv[++i];
             
@@ -78,6 +85,9 @@ RenderConfig parseArguments(int argc, char* argv[]) {
         else if (strcmp(argv[i], "--glossy-samples") == 0 && i + 1 < argc) {
             config.glossySamples = std::stoi(argv[++i]);
         }
+        else if (strcmp(argv[i], "-exposure") == 0 && i + 1 < argc) {
+            config.exposure = std::stof(argv[++i]);
+        }
     }
     return config;
 }
@@ -96,6 +106,7 @@ int main(int argc, char* argv[]) {
     std::cout << "BVH:        " << (config.useBVH ? "Enabled" : "Disabled") << "\n";
     std::cout << "Depth:      " << config.maxDepth << "\n";
     std::cout << "AA Samples: " << config.samplesPerPixel << "\n";
+    std::cout << "Exposure:   " << config.exposure << "\n";
     std::cout << "========================================\n";
 
     Camera cam;

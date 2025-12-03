@@ -24,10 +24,12 @@ public:
 
     BVHNode(std::vector<Shape*>& shapes, size_t start, size_t end) {
         
+        // Compute bounds for all shapes
         for (size_t i = start; i < end; ++i) {
             box.expand(shapes[i]->bounds());
         }
 
+        // Select splitting axis based
         int axis = box.longestAxis();
         auto comparator = (axis == 0) ? box_x_compare
                         : (axis == 1) ? box_y_compare
@@ -35,10 +37,12 @@ public:
 
         size_t object_span = end - start;
 
+        // Base case
         if (object_span == 1) {
             left = shapes[start];
             right = nullptr;
         } 
+        // Recursive case
         else {
             std::sort(shapes.begin() + start, shapes.begin() + end, comparator);
             
@@ -50,20 +54,25 @@ public:
     }
 
     virtual ~BVHNode() {
+        if (right != nullptr) {
         delete left;
         delete right;
+        }
     }
 
     bool intersect(const Ray& ray, HitInfo& hit) const override {
         
+        // Check box intersection
         if (!box.intersect(ray, hit.t)) {
             return false;
         }
 
+        // If leaf, check actual shape
         if (right == nullptr) {
             return left->intersect(ray, hit);
         }
         
+        // If internal node, check both children
         bool hit_left = left->intersect(ray, hit);
         bool hit_right = right->intersect(ray, hit);
 
@@ -75,7 +84,7 @@ public:
     }
 
     Vector3 centroid() const override { 
-        return box.center(); 
+        return box.centre(); 
     }
 };
 

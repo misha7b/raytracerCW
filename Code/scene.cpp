@@ -1,13 +1,17 @@
-#include "scene.h"
-#include "shapes/sphere.cpp"
-#include "shapes/cube.cpp"
-#include "shapes/plane.cpp"
 #include <fstream>
 #include <iostream>
 #include <string>
 
+#include "scene.h"
+#include "image.h"    
+#include "shapes/sphere.h"
+#include "shapes/cube.h"
+#include "shapes/plane.h"
+
+// Scene loader
 bool loadScene(const std::string& filename, Camera& cam, Scene& scene)
 {
+    // Open file
     std::ifstream file(filename);
     if (!file.is_open()) {
         std::cerr << "Error: Cannot open scene file " << filename << std::endl;
@@ -20,7 +24,9 @@ bool loadScene(const std::string& filename, Camera& cam, Scene& scene)
 
         // --- CAMERA ---
         if (label == "BEGIN_CAMERA") {
-            // Camera::readFromFile
+
+            // Handled by camera.cpp
+
             file.close();
             cam.readFromFile(filename);
 
@@ -115,7 +121,6 @@ bool loadScene(const std::string& filename, Camera& cam, Scene& scene)
             }
 
             
-
             Sphere* s = new Sphere(translation, rotation, scale);
             s->material = mat;
             scene.shapes.push_back(s);
@@ -186,7 +191,8 @@ bool loadScene(const std::string& filename, Camera& cam, Scene& scene)
 
             Light light;
             light.position = location;
-            light.intensity = Vector3(intensity, intensity, intensity);
+            float scaleFactor = 10.0f; 
+            light.intensity = Vector3(intensity, intensity, intensity) / scaleFactor;
             light.radius = radius; 
             scene.lights.push_back(light);
             continue;

@@ -2,7 +2,7 @@
 #define SCENE_H
 
 #include "camera.h"
-#include "shapes/shape.h"
+#include "shapes/shape.h" 
 #include <vector>
 #include <string>
 
@@ -15,6 +15,13 @@ struct Light {
 struct Scene {
     std::vector<Shape*> shapes;
     std::vector<Light> lights;
+
+    ~Scene() {
+        for (Shape* s : shapes) {
+            delete s;
+        }
+        shapes.clear();
+    }
 };
 
 bool loadScene(const std::string& filename, Camera& cam, Scene& scene);

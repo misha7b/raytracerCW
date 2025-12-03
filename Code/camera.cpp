@@ -8,6 +8,7 @@
 static void sampleUnitDisk(float& x, float& y, int gridX, int gridY, int gridSize) {
     float cellSize = 1.0f / static_cast<float>(gridSize);
 
+    // Jitter within grid
     float r1 = (gridX * cellSize) + (randomFloat() * cellSize);
     float r2 = (gridY * cellSize) + (randomFloat() * cellSize);
 
@@ -15,8 +16,10 @@ static void sampleUnitDisk(float& x, float& y, int gridX, int gridY, int gridSiz
     float sx = 2.0f * r1 - 1.0f;
     float sy = 2.0f * r2 - 1.0f;
 
+    // Edge case, avoid division by 0
     if (sx == 0 && sy == 0) { x = 0; y = 0; return; }
 
+    // Map square to disk
     float r, theta;
     if (sx * sx > sy * sy) {
         r = sx;
@@ -31,10 +34,15 @@ static void sampleUnitDisk(float& x, float& y, int gridX, int gridY, int gridSiz
 }
 
 // Constructor
-Camera::Camera() {
+Camera::Camera() 
+    : location(0,0,0), gaze(0,0,-1), cameraUp(0,1,0), velocity(0,0,0),
+      focalLength(1.0f), sensorWidth(1.0f), sensorHeight(1.0f),
+      aperture(0.0f), focalDistance(1.0f), 
+      resolutionX(0), resolutionY(0) 
+{
 }
 
-// Read scene from file
+// Read Camera Data
 bool Camera::readFromFile(const std::string& filename) {
     std::ifstream file(filename);
 
@@ -47,7 +55,6 @@ bool Camera::readFromFile(const std::string& filename) {
     bool inCameraBlock = false;
 
     while (file >> label) {
-
         if (label == "BEGIN_CAMERA") {
             inCameraBlock = true;
             continue;
@@ -83,6 +90,7 @@ bool Camera::readFromFile(const std::string& filename) {
     }
 
     file.close();
+    
     calculateBasis();
 
     std::cout << "Camera loaded successfully" << std::endl;
@@ -121,30 +129,32 @@ Ray Camera::pixelToRay(float px, float py, int sX, int sY, int gridSide) const {
     float aspectRatio = (float)resolutionX / (float)resolutionY;
     float worldX_offset = u * sensorWidth;
     float worldY_offset = v * (sensorWidth / aspectRatio);
-    //float worldY_offset = v * sensorHeight;
 
     Vector3 currentPos = location;
 
-    // motion blur
+    // Motion Blur
     if (std::abs(velocity.x) > 1e-6 || std::abs(velocity.y) > 1e-6 || std::abs(velocity.z) > 1e-6) {
         float time = randomFloat(); // random time between 0.0 and 1.0
         currentPos = location + (velocity * time);
     }
 
+    // Compute point on image plane in world space
     Vector3 imagePlaneCenter = currentPos + (forward * focalLength);
     Vector3 targetPoint = imagePlaneCenter + (right * worldX_offset) + (up * worldY_offset);
 
     Vector3 direction = targetPoint - currentPos;
     direction.normalize();
 
-    // depth of field
+    // Depth of Field
+    // If aperture > 0, sample points on lens instead of pinhole
     if (aperture > 0.0f) {
+        
         float t = focalDistance / forward.dot(direction);
         Vector3 focalPoint = currentPos + (direction * t);
 
+        // Random point on lens
         float lensRadius = aperture * 0.5f;
         float diskX, diskY;
-
         sampleUnitDisk(diskX, diskY, sX, sY, gridSide);
         
         Vector3 lensOffset = (right * diskX * lensRadius) + (up * diskY * lensRadius);
@@ -156,6 +166,7 @@ Ray Camera::pixelToRay(float px, float py, int sX, int sY, int gridSide) const {
         return Ray(lensOrigin, lensDir);
     }
 
+    // Default pinhole camera
     return Ray(currentPos, direction);
 
 

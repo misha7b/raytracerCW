@@ -1,9 +1,9 @@
-
 #ifndef AABB_H
 #define AABB_H
 
-#include "camera.h"   
+#include "maths.h"
 #include <algorithm>
+#include <limits>
 #include <cmath>
 
 struct AABB {
@@ -39,7 +39,7 @@ struct AABB {
     }
 
     // Compute centre
-    Vector3 center() const { return (min + max) * 0.5f; }
+    Vector3 centre() const { return (min + max) * 0.5f; }
 
     // Compute extent
     Vector3 extent() const { return (max - min) * 0.5f; }
@@ -54,8 +54,8 @@ struct AABB {
 
     // Ray-AABB slab test
     bool intersect(const Ray& r, float tMax) const {
-        float tmin = 0.0f;
-        float tmax = tMax;
+        float tmin = 0.0f; // enter distance
+        float tmax = tMax; // exit distance
 
         for (int i = 0; i < 3; ++i) {
             float o, d, mi, ma;

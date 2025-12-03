@@ -35,10 +35,10 @@ scale 1.275020 1.275020 1.275020
 diffuse 1.0000 0.1000 0.1000  
 specular 1.0000 0.9000 0.9000 
 shininess 32.0000
-roughness 0.0000
+roughness 0.000
 reflectivity 0.1000
 transparency 0.9000
-ior 1.5200
+ior 1.67
 texture none
 END_CUBE
 
@@ -58,9 +58,9 @@ diffuse 0.1000 0.8000 0.1000
 specular 0.1000 0.8000 0.1000
 shininess 767.2307
 roughness 0.0500
-reflectivity 0.3000
-transparency 0.0000
-ior 1.0000
+reflectivity 0.1000
+transparency 0.8000
+ior 1.52000
 texture none
 END_SPHERE
 

@@ -1,8 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -I.
 
-SRCS = main.cpp raytracer.cpp camera.cpp image.cpp scene.cpp \
-       shapes/cube.cpp shapes/sphere.cpp shapes/plane.cpp
+SRCS = main.cpp raytracer.cpp camera.cpp image.cpp scene.cpp
 
 HEADERS = raytracer.h 
           
