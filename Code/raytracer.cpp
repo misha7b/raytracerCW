@@ -212,7 +212,7 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
     }
     
     // Ambient term
-    Vector3 finalColour = diffuseColor * 0.1f;
+    Vector3 finalColour = diffuseColor * 0.02f;
 
     // Surface normal and view direction
     Vector3 N = hit.normal;
@@ -421,6 +421,4 @@ void Raytracer::render(Image& img) const {
         }
     }
 
-
-    std::cout << "Render complete" << std::endl;
 }

@@ -1,0 +1,58 @@
+BEGIN_CAMERA
+CAMERA Camera_Main
+location 6.000000 -6.000000 5.000000
+gaze -0.639602 0.639602 -0.426401
+up -0.301511 0.301511 0.904534
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 1920 1080
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 0.0
+END_CAMERA
+
+BEGIN_PLANE
+PLANE FloorPlane
+vertex -10.000000 -10.000000 0.000000
+vertex 10.000000 -10.000000 0.000000
+vertex -10.000000 10.000000 0.000000
+vertex 10.000000 10.000000 0.000000
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture chessboard.ppm
+END_PLANE
+
+BEGIN_LIGHT
+LIGHT Light_Fill
+location -3.000000 -4.000000 2.000000
+intensity 100.000000
+radius 0.12500000
+END_LIGHT
+
+BEGIN_LIGHT
+LIGHT Light_Key
+location 4.000000 2.000000 5.000000
+intensity 50.000000
+radius 0.12500000
+END_LIGHT
+
+BEGIN_SPHERE
+SPHERE MainSphere
+translation 0.000000 0.000000 1.000000
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 100.0000
+roughness 0.0000
+reflectivity 0.7000
+transparency 0.0000
+ior 1.52000
+texture none
+END_SPHERE
+

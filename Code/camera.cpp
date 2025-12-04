@@ -44,6 +44,9 @@ Camera::Camera()
 
 // Read Camera Data
 bool Camera::readFromFile(const std::string& filename) {
+
+    std::cout << "Loading scene..." << std::endl;
+
     std::ifstream file(filename);
 
     if (!file.is_open()) {
@@ -93,7 +96,6 @@ bool Camera::readFromFile(const std::string& filename) {
     
     calculateBasis();
 
-    std::cout << "Camera loaded successfully" << std::endl;
     return true;
 }
 

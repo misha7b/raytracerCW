@@ -11,3 +11,19 @@ Image Read/Write - COMPLETE
 Ray Intersection - COMPLETE
 
 Acceleration Hierarchy - COMPLETE
+
+# Module 3 - COMPLETE
+
+Whitted-style Raytracing - COMPLETE
+
+Antialiasing - COMPLETE
+
+Textures - COMPLETE
+
+# Final Submission
+
+System Integration - COMPLETE
+
+Distributed Raytracing - COMPLETE
+
+Lens Effects - COMPLETE
