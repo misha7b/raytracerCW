@@ -1,0 +1,103 @@
+BEGIN_CAMERA
+CAMERA Camera
+location 7.358891 -6.925791 5.721609
+gaze -0.651558 0.614170 -0.445271
+up -0.324013 0.305421 0.895396
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 1920 1080
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 0.0
+END_CAMERA
+
+BEGIN_CUBE
+CUBE Cube
+translation 0.546005 -0.155940 0.399603
+rotation 0.610716 0.417131 0.276336
+scale 0.453800 0.453800 0.453800
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.2000
+transparency 0.0000
+ior 1.0000
+texture marble.ppm
+END_CUBE
+
+BEGIN_CUBE
+CUBE Cube.001
+translation -0.708159 -1.168707 0.837875
+rotation 0.000000 0.000000 0.000000
+scale 0.453800 0.453800 0.453800
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.2000
+transparency 0.0000
+ior 1.0000
+texture marble.ppm
+END_CUBE
+
+BEGIN_CUBE
+CUBE Cube.002
+translation 0.996677 1.252410 1.237591
+rotation 1.067170 0.255348 0.429809
+scale 0.453800 0.453800 0.453800
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.2000
+transparency 0.0000
+ior 1.0000
+texture marble.ppm
+END_CUBE
+
+BEGIN_LIGHT
+LIGHT Light
+location 4.076245 1.005454 5.903862
+intensity 100.000000
+radius 0.100000
+END_LIGHT
+
+BEGIN_LIGHT
+LIGHT Light.001
+location -0.675250 -6.101047 3.054554
+intensity 1000.000000
+radius 0.100000
+END_LIGHT
+
+BEGIN_PLANE
+PLANE Plane
+vertex -12.406326 -12.646058 -0.380837
+vertex 13.601379 -12.646058 -0.380837
+vertex -12.406326 13.361648 -0.380837
+vertex 13.601379 13.361648 -0.380837
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture chessboard.ppm
+END_PLANE
+
+BEGIN_SPHERE
+SPHERE Sphere
+translation 0.000000 0.000000 1.926131
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 0.521296
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture chessboard.ppm
+END_SPHERE
+

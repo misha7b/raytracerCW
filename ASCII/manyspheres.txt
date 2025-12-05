@@ -1,0 +1,3020 @@
+BEGIN_CAMERA
+CAMERA 0g
+location -0.417609 -33.796585 30.962393
+gaze 0.000000 0.783327 -0.621610
+up 0.000000 0.621610 0.783327
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 1920 1080
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 0.0
+END_CAMERA
+
+BEGIN_LIGHT
+LIGHT Light
+location 10.000000 -10.000000 20.000000
+intensity 5000.000000
+radius 0.500000
+END_LIGHT
+
+BEGIN_SPHERE
+SPHERE Sphere_000
+translation 3.898566 7.861624 4.540657
+rotation 0.000000 0.000000 0.000000
+scale 0.794886 0.794886 0.794886
+diffuse 0.3624 0.4018 0.1177
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_001
+translation 5.187237 11.785391 1.282181
+rotation 0.000000 0.000000 0.000000
+scale 0.607478 0.607478 0.607478
+diffuse 0.0688 0.3095 0.5843
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_002
+translation -9.677387 4.573346 2.565049
+rotation 0.000000 0.000000 0.000000
+scale 0.613158 0.613158 0.613158
+diffuse 0.5264 0.7422 0.5290
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_003
+translation -11.624718 -6.614201 1.934585
+rotation 0.000000 0.000000 0.000000
+scale 0.711035 0.711035 0.711035
+diffuse 0.9688 0.6628 0.7101
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_004
+translation -7.461493 7.661572 3.592034
+rotation 0.000000 0.000000 0.000000
+scale 1.302204 1.302204 1.302204
+diffuse 0.1106 0.5026 0.0571
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_005
+translation 10.824596 -0.169241 1.621255
+rotation 0.000000 0.000000 0.000000
+scale 1.372116 1.372116 1.372116
+diffuse 0.9710 0.4333 0.7470
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_006
+translation 7.120232 9.399113 3.896040
+rotation 0.000000 0.000000 0.000000
+scale 0.602021 0.602021 0.602021
+diffuse 0.7838 0.8586 0.0605
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_007
+translation 6.627961 -1.637952 0.882772
+rotation 0.000000 0.000000 0.000000
+scale 0.919744 0.919744 0.919744
+diffuse 0.6540 0.2379 0.6923
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_008
+translation 9.419942 -2.161045 3.651789
+rotation 0.000000 0.000000 0.000000
+scale 1.098262 1.098262 1.098262
+diffuse 0.9135 0.3178 0.6723
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_009
+translation 1.351206 10.025084 1.631596
+rotation 0.000000 0.000000 0.000000
+scale 0.517660 0.517660 0.517660
+diffuse 0.0426 0.7886 0.3899
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_010
+translation 2.633327 13.720876 1.440728
+rotation 0.000000 0.000000 0.000000
+scale 0.747352 0.747352 0.747352
+diffuse 0.2188 0.7690 0.7994
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_011
+translation 14.470777 -4.359876 1.976425
+rotation 0.000000 0.000000 0.000000
+scale 0.963518 0.963518 0.963518
+diffuse 0.7562 0.6825 0.7181
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_012
+translation 5.584064 3.490717 1.037574
+rotation 0.000000 0.000000 0.000000
+scale 1.466655 1.466655 1.466655
+diffuse 0.4817 0.6763 0.7292
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_013
+translation 8.626532 1.669925 3.380977
+rotation 0.000000 0.000000 0.000000
+scale 1.090726 1.090726 1.090726
+diffuse 0.0163 0.1007 0.9188
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_014
+translation 8.878381 1.177222 3.199239
+rotation 0.000000 0.000000 0.000000
+scale 1.009128 1.009128 1.009128
+diffuse 0.3890 0.7956 0.2999
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_015
+translation -2.282405 -1.151776 2.253841
+rotation 0.000000 0.000000 0.000000
+scale 0.896156 0.896156 0.896156
+diffuse 0.8661 0.5591 0.7303
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_016
+translation -10.429446 9.426286 0.699221
+rotation 0.000000 0.000000 0.000000
+scale 1.022019 1.022019 1.022019
+diffuse 0.7404 0.1976 0.4215
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_017
+translation 14.802234 11.573719 4.464075
+rotation 0.000000 0.000000 0.000000
+scale 0.604951 0.604951 0.604951
+diffuse 0.2292 0.1655 0.3857
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_018
+translation 2.815120 1.424305 3.422367
+rotation 0.000000 0.000000 0.000000
+scale 0.936802 0.936802 0.936802
+diffuse 0.0710 0.7745 0.0893
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_019
+translation -3.502670 -0.128301 2.950047
+rotation 0.000000 0.000000 0.000000
+scale 1.012599 1.012599 1.012599
+diffuse 0.4792 0.2218 0.0585
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_020
+translation 11.153404 13.682966 3.718292
+rotation 0.000000 0.000000 0.000000
+scale 0.552991 0.552991 0.552991
+diffuse 0.4857 0.3110 0.7249
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_021
+translation -11.529996 14.668718 1.804453
+rotation 0.000000 0.000000 0.000000
+scale 1.331299 1.331299 1.331299
+diffuse 0.7164 0.3484 0.4149
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_022
+translation -11.860085 -2.346504 1.237939
+rotation 0.000000 0.000000 0.000000
+scale 0.563576 0.563576 0.563576
+diffuse 0.7555 0.9548 0.8919
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_023
+translation 6.216791 11.451342 4.710407
+rotation 0.000000 0.000000 0.000000
+scale 1.067286 1.067286 1.067286
+diffuse 0.2745 0.4034 0.8193
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_024
+translation -6.145812 3.291582 2.162418
+rotation 0.000000 0.000000 0.000000
+scale 0.787369 0.787369 0.787369
+diffuse 0.5582 0.1381 0.8141
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_025
+translation -6.555108 10.062510 1.666502
+rotation 0.000000 0.000000 0.000000
+scale 1.259745 1.259745 1.259745
+diffuse 0.2497 0.6439 0.2651
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_026
+translation -6.742959 1.287407 1.510814
+rotation 0.000000 0.000000 0.000000
+scale 0.610930 0.610930 0.610930
+diffuse 0.2415 0.1529 0.4043
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_027
+translation 2.284771 -5.242510 1.410970
+rotation 0.000000 0.000000 0.000000
+scale 0.781590 0.781590 0.781590
+diffuse 0.8196 0.9784 0.7756
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_028
+translation 1.974618 6.406425 2.323107
+rotation 0.000000 0.000000 0.000000
+scale 0.897286 0.897286 0.897286
+diffuse 0.1155 0.3300 0.5981
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_029
+translation -4.333274 -1.179476 0.525669
+rotation 0.000000 0.000000 0.000000
+scale 1.054147 1.054147 1.054147
+diffuse 0.9540 0.4776 0.0214
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_030
+translation 3.643221 -6.673917 2.925815
+rotation 0.000000 0.000000 0.000000
+scale 1.407354 1.407354 1.407354
+diffuse 0.4413 0.3235 0.8443
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_031
+translation 0.174363 11.449747 4.819114
+rotation 0.000000 0.000000 0.000000
+scale 1.255973 1.255973 1.255973
+diffuse 0.7903 0.8924 0.8890
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_032
+translation -3.593377 14.749030 4.198710
+rotation 0.000000 0.000000 0.000000
+scale 0.871281 0.871281 0.871281
+diffuse 0.9196 0.3686 0.7367
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_033
+translation 2.340709 14.982147 1.168345
+rotation 0.000000 0.000000 0.000000
+scale 1.362472 1.362472 1.362472
+diffuse 0.5317 0.7536 0.0428
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_034
+translation 13.510614 3.117594 3.713682
+rotation 0.000000 0.000000 0.000000
+scale 1.263723 1.263723 1.263723
+diffuse 0.5160 0.5755 0.1254
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_035
+translation -9.629107 -4.155033 4.740312
+rotation 0.000000 0.000000 0.000000
+scale 1.209285 1.209285 1.209285
+diffuse 0.2291 0.2438 0.8195
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_036
+translation -14.365794 12.730075 3.835231
+rotation 0.000000 0.000000 0.000000
+scale 0.717395 0.717395 0.717395
+diffuse 0.6275 0.2666 0.0154
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_037
+translation -9.133071 13.245891 0.637149
+rotation 0.000000 0.000000 0.000000
+scale 0.847279 0.847279 0.847279
+diffuse 0.2258 0.7633 0.8819
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_038
+translation 7.143135 4.944761 3.812911
+rotation 0.000000 0.000000 0.000000
+scale 0.749223 0.749223 0.749223
+diffuse 0.5056 0.6753 0.0807
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_039
+translation -6.176432 3.796882 3.780198
+rotation 0.000000 0.000000 0.000000
+scale 0.924052 0.924052 0.924052
+diffuse 0.4065 0.3655 0.3254
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_040
+translation -5.021140 13.421754 0.614440
+rotation 0.000000 0.000000 0.000000
+scale 0.709421 0.709421 0.709421
+diffuse 0.8049 0.2758 0.4867
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_041
+translation 5.536079 12.414853 4.428410
+rotation 0.000000 0.000000 0.000000
+scale 0.807524 0.807524 0.807524
+diffuse 0.9423 0.7607 0.1185
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_042
+translation 11.568838 -2.307752 2.722236
+rotation 0.000000 0.000000 0.000000
+scale 1.384681 1.384681 1.384681
+diffuse 0.3953 0.6205 0.0378
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_043
+translation 13.093671 -6.204828 1.023951
+rotation 0.000000 0.000000 0.000000
+scale 1.087934 1.087934 1.087934
+diffuse 0.3244 0.4771 0.8094
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_044
+translation -13.978361 -2.285283 2.691563
+rotation 0.000000 0.000000 0.000000
+scale 0.534717 0.534717 0.534717
+diffuse 0.5421 0.5962 0.3468
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_045
+translation 7.953213 6.237778 1.204404
+rotation 0.000000 0.000000 0.000000
+scale 1.062489 1.062489 1.062489
+diffuse 0.0072 0.7620 0.6717
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_046
+translation -10.883947 1.208451 0.513070
+rotation 0.000000 0.000000 0.000000
+scale 1.048998 1.048998 1.048998
+diffuse 0.0603 0.9779 0.4445
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_047
+translation -11.284867 4.657293 0.676370
+rotation 0.000000 0.000000 0.000000
+scale 0.927202 0.927202 0.927202
+diffuse 0.8499 0.2277 0.8412
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_048
+translation 10.701427 3.557476 1.896284
+rotation 0.000000 0.000000 0.000000
+scale 0.997652 0.997652 0.997652
+diffuse 0.1429 0.2493 0.4087
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_049
+translation 9.630774 9.488538 2.703195
+rotation 0.000000 0.000000 0.000000
+scale 1.258695 1.258695 1.258695
+diffuse 0.9664 0.7059 0.9687
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_050
+translation 7.687647 0.309971 0.986330
+rotation 0.000000 0.000000 0.000000
+scale 1.221897 1.221897 1.221897
+diffuse 0.1025 0.9730 0.8854
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_051
+translation 1.273130 3.771129 1.652384
+rotation 0.000000 0.000000 0.000000
+scale 1.231601 1.231601 1.231601
+diffuse 0.6642 0.5321 0.5571
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_052
+translation -14.457176 -1.528139 1.005646
+rotation 0.000000 0.000000 0.000000
+scale 0.802356 0.802356 0.802356
+diffuse 0.9566 0.6285 0.5381
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_053
+translation -8.643422 -6.807024 3.953085
+rotation 0.000000 0.000000 0.000000
+scale 0.561195 0.561195 0.561195
+diffuse 0.2554 0.3328 0.0229
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_054
+translation 0.894061 -6.848655 2.048532
+rotation 0.000000 0.000000 0.000000
+scale 1.276981 1.276981 1.276981
+diffuse 0.0293 0.6227 0.8220
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_055
+translation 5.768645 -4.563539 3.616529
+rotation 0.000000 0.000000 0.000000
+scale 0.864691 0.864691 0.864691
+diffuse 0.7192 0.6484 0.4133
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_056
+translation -8.087450 4.317650 4.735741
+rotation 0.000000 0.000000 0.000000
+scale 0.681873 0.681873 0.681873
+diffuse 0.9993 0.6967 0.0837
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_057
+translation -12.199116 0.833271 1.040910
+rotation 0.000000 0.000000 0.000000
+scale 1.371923 1.371923 1.371923
+diffuse 0.5836 0.8986 0.4005
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_058
+translation 4.518089 6.309726 1.929392
+rotation 0.000000 0.000000 0.000000
+scale 1.130580 1.130580 1.130580
+diffuse 0.7744 0.5319 0.3229
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_059
+translation -6.457164 0.868011 1.966856
+rotation 0.000000 0.000000 0.000000
+scale 0.712018 0.712018 0.712018
+diffuse 0.0617 0.7362 0.2605
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_060
+translation -4.048547 7.728185 4.618459
+rotation 0.000000 0.000000 0.000000
+scale 1.350932 1.350932 1.350932
+diffuse 0.2661 0.2478 0.3577
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_061
+translation -1.442003 5.414578 1.185040
+rotation 0.000000 0.000000 0.000000
+scale 0.779239 0.779239 0.779239
+diffuse 0.1714 0.8503 0.8164
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_062
+translation 12.536315 -5.122701 4.389007
+rotation 0.000000 0.000000 0.000000
+scale 0.778726 0.778726 0.778726
+diffuse 0.4691 0.9772 0.1468
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_063
+translation 11.407009 7.172416 4.379577
+rotation 0.000000 0.000000 0.000000
+scale 0.841267 0.841267 0.841267
+diffuse 0.8260 0.7419 0.6907
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_064
+translation -12.981866 5.331606 3.933906
+rotation 0.000000 0.000000 0.000000
+scale 1.334845 1.334845 1.334845
+diffuse 0.7126 0.1797 0.3511
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_065
+translation -8.390208 6.112322 3.782008
+rotation 0.000000 0.000000 0.000000
+scale 0.720305 0.720305 0.720305
+diffuse 0.2126 0.8684 0.7168
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_066
+translation 1.538504 -7.499111 0.529896
+rotation 0.000000 0.000000 0.000000
+scale 0.501893 0.501893 0.501893
+diffuse 0.3952 0.9334 0.2278
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_067
+translation -9.099751 -0.464175 4.895604
+rotation 0.000000 0.000000 0.000000
+scale 1.338728 1.338728 1.338728
+diffuse 0.0647 0.8161 0.1033
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_068
+translation -1.326210 -1.767646 2.969920
+rotation 0.000000 0.000000 0.000000
+scale 1.012250 1.012250 1.012250
+diffuse 0.2641 0.1612 0.6316
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_069
+translation 1.836011 2.516132 3.851558
+rotation 0.000000 0.000000 0.000000
+scale 0.741760 0.741760 0.741760
+diffuse 0.4747 0.5095 0.9840
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_070
+translation 0.878917 9.868968 2.208972
+rotation 0.000000 0.000000 0.000000
+scale 0.774877 0.774877 0.774877
+diffuse 0.6945 0.8214 0.2793
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_071
+translation -14.759369 -6.251486 4.453038
+rotation 0.000000 0.000000 0.000000
+scale 1.487288 1.487288 1.487288
+diffuse 0.4396 0.2801 0.8447
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_072
+translation -3.332331 -4.726376 3.222638
+rotation 0.000000 0.000000 0.000000
+scale 1.019952 1.019952 1.019952
+diffuse 0.1820 0.4377 0.6941
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_073
+translation 14.296219 3.392763 1.012891
+rotation 0.000000 0.000000 0.000000
+scale 1.479787 1.479787 1.479787
+diffuse 0.7659 0.9180 0.4251
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_074
+translation 11.985228 9.007906 0.896643
+rotation 0.000000 0.000000 0.000000
+scale 1.087225 1.087225 1.087225
+diffuse 0.5601 0.7675 0.7292
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_075
+translation -9.811561 -2.113281 1.077352
+rotation 0.000000 0.000000 0.000000
+scale 1.078781 1.078781 1.078781
+diffuse 0.0628 0.1521 0.6053
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_076
+translation 1.886962 -2.568156 3.171703
+rotation 0.000000 0.000000 0.000000
+scale 0.886768 0.886768 0.886768
+diffuse 0.5044 0.2490 0.8439
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_077
+translation -5.349272 1.253105 1.141390
+rotation 0.000000 0.000000 0.000000
+scale 0.976246 0.976246 0.976246
+diffuse 0.6729 0.3629 0.1571
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_078
+translation -2.347554 14.033681 0.776386
+rotation 0.000000 0.000000 0.000000
+scale 1.114951 1.114951 1.114951
+diffuse 0.6960 0.2861 0.0490
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_079
+translation 8.852736 12.159077 3.876292
+rotation 0.000000 0.000000 0.000000
+scale 1.150166 1.150166 1.150166
+diffuse 0.9506 0.5320 0.4964
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_080
+translation -1.027174 -3.170309 4.917681
+rotation 0.000000 0.000000 0.000000
+scale 1.247173 1.247173 1.247173
+diffuse 0.4807 0.0379 0.7887
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_081
+translation 13.518733 12.941571 4.246730
+rotation 0.000000 0.000000 0.000000
+scale 0.609025 0.609025 0.609025
+diffuse 0.6130 0.6137 0.9130
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_082
+translation -7.614567 -4.204108 2.909411
+rotation 0.000000 0.000000 0.000000
+scale 1.362566 1.362566 1.362566
+diffuse 0.4368 0.6036 0.0749
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_083
+translation -14.684045 2.625154 4.342503
+rotation 0.000000 0.000000 0.000000
+scale 0.884472 0.884472 0.884472
+diffuse 0.4419 0.1206 0.1179
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_084
+translation -3.090998 14.672384 3.616830
+rotation 0.000000 0.000000 0.000000
+scale 1.229092 1.229092 1.229092
+diffuse 0.7440 0.8818 0.8022
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_085
+translation 12.067725 -1.652949 3.590919
+rotation 0.000000 0.000000 0.000000
+scale 0.981659 0.981659 0.981659
+diffuse 0.2589 0.4132 0.0692
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_086
+translation 12.884489 -1.584750 2.546522
+rotation 0.000000 0.000000 0.000000
+scale 0.928864 0.928864 0.928864
+diffuse 0.1704 0.7266 0.9410
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_087
+translation -5.272013 14.975264 4.224514
+rotation 0.000000 0.000000 0.000000
+scale 0.915866 0.915866 0.915866
+diffuse 0.5355 0.7275 0.6333
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_088
+translation 5.500943 7.101461 1.592115
+rotation 0.000000 0.000000 0.000000
+scale 0.870907 0.870907 0.870907
+diffuse 0.1401 0.5255 0.5868
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_089
+translation -2.252668 -6.825433 2.126540
+rotation 0.000000 0.000000 0.000000
+scale 1.426716 1.426716 1.426716
+diffuse 0.2283 0.1175 0.6753
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_090
+translation 4.011933 1.258052 2.362113
+rotation 0.000000 0.000000 0.000000
+scale 0.514358 0.514358 0.514358
+diffuse 0.0286 0.3275 0.9665
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_091
+translation -14.550618 13.209514 0.753498
+rotation 0.000000 0.000000 0.000000
+scale 0.681304 0.681304 0.681304
+diffuse 0.8283 0.4862 0.1393
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_092
+translation -10.622412 1.856005 1.389736
+rotation 0.000000 0.000000 0.000000
+scale 1.016409 1.016409 1.016409
+diffuse 0.2836 0.2429 0.8191
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_093
+translation -12.931869 -0.703331 1.337172
+rotation 0.000000 0.000000 0.000000
+scale 0.632572 0.632572 0.632572
+diffuse 0.6218 0.3779 0.7300
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_094
+translation -6.610560 1.997076 1.743865
+rotation 0.000000 0.000000 0.000000
+scale 1.075775 1.075775 1.075775
+diffuse 0.0001 0.6952 0.0595
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_095
+translation -6.948287 12.294439 4.693395
+rotation 0.000000 0.000000 0.000000
+scale 0.578416 0.578416 0.578416
+diffuse 0.4540 0.5114 0.8906
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_096
+translation 6.360611 -5.320237 2.103566
+rotation 0.000000 0.000000 0.000000
+scale 0.912893 0.912893 0.912893
+diffuse 0.7358 0.6451 0.6978
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_097
+translation -0.192903 6.475649 1.775643
+rotation 0.000000 0.000000 0.000000
+scale 0.690865 0.690865 0.690865
+diffuse 0.4695 0.8346 0.5778
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_098
+translation 6.540322 -5.757928 2.308935
+rotation 0.000000 0.000000 0.000000
+scale 0.507798 0.507798 0.507798
+diffuse 0.6880 0.5111 0.3923
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_099
+translation -2.403527 -7.104723 0.707931
+rotation 0.000000 0.000000 0.000000
+scale 1.105934 1.105934 1.105934
+diffuse 0.6443 0.5672 0.2162
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_100
+translation -1.655197 12.458478 1.996379
+rotation 0.000000 0.000000 0.000000
+scale 0.976750 0.976750 0.976750
+diffuse 0.1502 0.7348 0.1589
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_101
+translation 3.347279 -2.000723 1.783140
+rotation 0.000000 0.000000 0.000000
+scale 1.123363 1.123363 1.123363
+diffuse 0.0532 0.7307 0.1875
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_102
+translation 9.103524 8.429392 4.477471
+rotation 0.000000 0.000000 0.000000
+scale 0.984296 0.984296 0.984296
+diffuse 0.3057 0.1302 0.4673
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_103
+translation 3.975651 -1.080273 1.618227
+rotation 0.000000 0.000000 0.000000
+scale 1.367574 1.367574 1.367574
+diffuse 0.7187 0.4450 0.4636
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_104
+translation -8.878937 2.800962 1.291713
+rotation 0.000000 0.000000 0.000000
+scale 0.703158 0.703158 0.703158
+diffuse 0.8353 0.6871 0.5269
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_105
+translation 10.533045 6.908475 4.221826
+rotation 0.000000 0.000000 0.000000
+scale 0.919692 0.919692 0.919692
+diffuse 0.8410 0.9319 0.7361
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_106
+translation -2.677986 -1.765583 1.169329
+rotation 0.000000 0.000000 0.000000
+scale 0.963057 0.963057 0.963057
+diffuse 0.5796 0.5709 0.6880
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_107
+translation -5.246156 7.723996 1.753466
+rotation 0.000000 0.000000 0.000000
+scale 1.130020 1.130020 1.130020
+diffuse 0.7980 0.0110 0.4410
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_108
+translation 6.538359 -2.324293 0.892076
+rotation 0.000000 0.000000 0.000000
+scale 0.516379 0.516379 0.516379
+diffuse 0.1331 0.6939 0.3510
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_109
+translation -3.293173 -0.122136 2.269786
+rotation 0.000000 0.000000 0.000000
+scale 1.495157 1.495157 1.495157
+diffuse 0.7402 0.8542 0.9434
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_110
+translation 11.419503 12.736880 0.699614
+rotation 0.000000 0.000000 0.000000
+scale 1.000061 1.000061 1.000061
+diffuse 0.2209 0.3529 0.8743
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_111
+translation -11.896971 14.814125 2.750890
+rotation 0.000000 0.000000 0.000000
+scale 0.662728 0.662728 0.662728
+diffuse 0.5145 0.9330 0.1433
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_112
+translation -9.977313 1.820728 0.647840
+rotation 0.000000 0.000000 0.000000
+scale 0.571189 0.571189 0.571189
+diffuse 0.5384 0.7601 0.0547
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_113
+translation -14.063219 0.917190 3.308351
+rotation 0.000000 0.000000 0.000000
+scale 1.116218 1.116218 1.116218
+diffuse 0.1571 0.4520 0.7504
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_114
+translation -5.000708 8.410995 1.607262
+rotation 0.000000 0.000000 0.000000
+scale 1.335406 1.335406 1.335406
+diffuse 0.0239 0.0902 0.1887
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_115
+translation 11.754065 4.880398 4.777593
+rotation 0.000000 0.000000 0.000000
+scale 0.780221 0.780221 0.780221
+diffuse 0.9426 0.6302 0.6918
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_116
+translation 2.703899 2.941661 1.268796
+rotation 0.000000 0.000000 0.000000
+scale 1.127712 1.127712 1.127712
+diffuse 0.0071 0.0094 0.3611
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_117
+translation 12.012267 -2.158853 4.589719
+rotation 0.000000 0.000000 0.000000
+scale 0.644086 0.644086 0.644086
+diffuse 0.6416 0.4900 0.8221
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_118
+translation 8.204439 -3.948862 4.261111
+rotation 0.000000 0.000000 0.000000
+scale 1.091892 1.091892 1.091892
+diffuse 0.3963 0.5804 0.4333
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_119
+translation -1.718707 10.533674 4.752521
+rotation 0.000000 0.000000 0.000000
+scale 0.807264 0.807264 0.807264
+diffuse 0.4456 0.2216 0.2280
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_120
+translation -4.119783 13.992255 3.108236
+rotation 0.000000 0.000000 0.000000
+scale 1.364651 1.364651 1.364651
+diffuse 0.3489 0.9120 0.7162
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_121
+translation -1.141716 -2.944511 4.101873
+rotation 0.000000 0.000000 0.000000
+scale 0.947150 0.947150 0.947150
+diffuse 0.1016 0.9941 0.6174
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_122
+translation -5.848219 13.791342 2.065439
+rotation 0.000000 0.000000 0.000000
+scale 1.341553 1.341553 1.341553
+diffuse 0.3622 0.2419 0.5364
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_123
+translation -5.397598 12.075245 1.221796
+rotation 0.000000 0.000000 0.000000
+scale 0.763019 0.763019 0.763019
+diffuse 0.3208 0.4117 0.5869
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_124
+translation -13.997211 7.862801 2.831048
+rotation 0.000000 0.000000 0.000000
+scale 1.472046 1.472046 1.472046
+diffuse 0.5571 0.2178 0.6861
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_125
+translation 4.728720 7.544702 3.573912
+rotation 0.000000 0.000000 0.000000
+scale 0.501419 0.501419 0.501419
+diffuse 0.0243 0.0353 0.4481
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_126
+translation -8.121442 -6.482431 1.792124
+rotation 0.000000 0.000000 0.000000
+scale 0.717268 0.717268 0.717268
+diffuse 0.9483 0.0605 0.1842
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_127
+translation 13.983107 14.628721 3.839905
+rotation 0.000000 0.000000 0.000000
+scale 0.893118 0.893118 0.893118
+diffuse 0.9013 0.0930 0.2955
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_128
+translation 2.563457 -4.134678 4.395532
+rotation 0.000000 0.000000 0.000000
+scale 0.613974 0.613974 0.613974
+diffuse 0.1053 0.4095 0.6275
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_129
+translation -4.696888 11.510899 4.182904
+rotation 0.000000 0.000000 0.000000
+scale 0.801868 0.801868 0.801868
+diffuse 0.1995 0.5972 0.0900
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_130
+translation -7.457263 11.508191 1.307913
+rotation 0.000000 0.000000 0.000000
+scale 0.956578 0.956578 0.956578
+diffuse 0.1723 0.6987 0.2360
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_131
+translation -10.205275 11.388474 3.685549
+rotation 0.000000 0.000000 0.000000
+scale 0.907778 0.907778 0.907778
+diffuse 0.8268 0.9580 0.5265
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_132
+translation -1.389605 -1.318901 1.229688
+rotation 0.000000 0.000000 0.000000
+scale 0.548752 0.548752 0.548752
+diffuse 0.2778 0.0518 0.2171
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_133
+translation -10.372169 4.840684 3.434023
+rotation 0.000000 0.000000 0.000000
+scale 1.112784 1.112784 1.112784
+diffuse 0.4382 0.2129 0.6849
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_134
+translation 7.618572 11.996763 4.605015
+rotation 0.000000 0.000000 0.000000
+scale 0.967084 0.967084 0.967084
+diffuse 0.7791 0.3894 0.0842
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_135
+translation 7.618896 6.860398 3.863275
+rotation 0.000000 0.000000 0.000000
+scale 1.142772 1.142772 1.142772
+diffuse 0.1002 0.2345 0.5096
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_136
+translation 14.549385 0.150392 0.985327
+rotation 0.000000 0.000000 0.000000
+scale 0.520068 0.520068 0.520068
+diffuse 0.4245 0.4625 0.6024
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_137
+translation 7.557207 -5.848830 4.946814
+rotation 0.000000 0.000000 0.000000
+scale 0.725056 0.725056 0.725056
+diffuse 0.5902 0.7283 0.4972
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_138
+translation 13.787014 12.706964 1.580331
+rotation 0.000000 0.000000 0.000000
+scale 0.539640 0.539640 0.539640
+diffuse 0.3355 0.4789 0.4293
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_139
+translation -8.343309 -1.477565 2.057098
+rotation 0.000000 0.000000 0.000000
+scale 0.593288 0.593288 0.593288
+diffuse 0.2057 0.2237 0.1734
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_140
+translation 3.257991 12.155499 1.067286
+rotation 0.000000 0.000000 0.000000
+scale 0.531145 0.531145 0.531145
+diffuse 0.1540 0.6906 0.7708
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_141
+translation 0.261061 -2.271850 3.659889
+rotation 0.000000 0.000000 0.000000
+scale 0.545859 0.545859 0.545859
+diffuse 0.8191 0.4646 0.0281
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_142
+translation -9.386859 14.574563 1.151173
+rotation 0.000000 0.000000 0.000000
+scale 0.561656 0.561656 0.561656
+diffuse 0.2072 0.0128 0.2018
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_143
+translation -11.007614 2.510363 1.611081
+rotation 0.000000 0.000000 0.000000
+scale 1.336049 1.336049 1.336049
+diffuse 0.3202 0.3199 0.5228
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_144
+translation -0.735063 -6.201167 4.425170
+rotation 0.000000 0.000000 0.000000
+scale 1.340393 1.340393 1.340393
+diffuse 0.3051 0.6162 0.0250
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_145
+translation -0.512537 13.443170 2.311410
+rotation 0.000000 0.000000 0.000000
+scale 0.667846 0.667846 0.667846
+diffuse 0.5996 0.8902 0.9122
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_146
+translation 3.688366 -5.460518 3.067806
+rotation 0.000000 0.000000 0.000000
+scale 0.809086 0.809086 0.809086
+diffuse 0.0876 0.7472 0.5709
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_147
+translation -2.695157 1.742429 1.104426
+rotation 0.000000 0.000000 0.000000
+scale 0.699473 0.699473 0.699473
+diffuse 0.5880 0.2133 0.9205
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_148
+translation -0.147876 7.709104 2.913545
+rotation 0.000000 0.000000 0.000000
+scale 1.382017 1.382017 1.382017
+diffuse 0.3611 0.7036 0.2380
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_149
+translation -14.170103 -7.369741 3.073445
+rotation 0.000000 0.000000 0.000000
+scale 1.452164 1.452164 1.452164
+diffuse 0.0735 0.1460 0.6581
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_150
+translation 6.730645 -0.754867 2.892436
+rotation 0.000000 0.000000 0.000000
+scale 1.369562 1.369562 1.369562
+diffuse 0.5036 0.4967 0.2313
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_151
+translation -7.379834 -3.983821 0.693960
+rotation 0.000000 0.000000 0.000000
+scale 1.036364 1.036364 1.036364
+diffuse 0.0929 0.9250 0.0095
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_152
+translation 12.857905 12.786541 1.595381
+rotation 0.000000 0.000000 0.000000
+scale 1.298814 1.298814 1.298814
+diffuse 0.1920 0.1169 0.5347
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_153
+translation -5.491466 0.226529 3.619048
+rotation 0.000000 0.000000 0.000000
+scale 1.161564 1.161564 1.161564
+diffuse 0.4468 0.6881 0.9521
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_154
+translation 11.070509 -6.275337 1.082826
+rotation 0.000000 0.000000 0.000000
+scale 0.537814 0.537814 0.537814
+diffuse 0.0100 0.3049 0.1640
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_155
+translation -8.210064 1.064430 1.055609
+rotation 0.000000 0.000000 0.000000
+scale 0.819597 0.819597 0.819597
+diffuse 0.5013 0.9444 0.2609
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_156
+translation -11.560843 14.902109 3.545892
+rotation 0.000000 0.000000 0.000000
+scale 1.275846 1.275846 1.275846
+diffuse 0.7814 0.5039 0.4784
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_157
+translation 2.304089 6.339109 1.568961
+rotation 0.000000 0.000000 0.000000
+scale 0.643068 0.643068 0.643068
+diffuse 0.5252 0.2000 0.7405
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_158
+translation -11.031400 11.692599 3.664219
+rotation 0.000000 0.000000 0.000000
+scale 1.205840 1.205840 1.205840
+diffuse 0.6573 0.7859 0.9217
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_159
+translation -7.751986 6.011063 3.675557
+rotation 0.000000 0.000000 0.000000
+scale 1.236436 1.236436 1.236436
+diffuse 0.0380 0.6734 0.4444
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_160
+translation 8.070024 8.688814 1.741644
+rotation 0.000000 0.000000 0.000000
+scale 1.152368 1.152368 1.152368
+diffuse 0.7266 0.5049 0.0828
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_161
+translation -6.379961 -2.891905 1.757096
+rotation 0.000000 0.000000 0.000000
+scale 1.233742 1.233742 1.233742
+diffuse 0.8052 0.3309 0.6501
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_162
+translation 1.963645 11.836696 0.580191
+rotation 0.000000 0.000000 0.000000
+scale 0.928510 0.928510 0.928510
+diffuse 0.6046 0.0770 0.8193
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_163
+translation 13.649473 -0.873615 4.868239
+rotation 0.000000 0.000000 0.000000
+scale 1.032240 1.032240 1.032240
+diffuse 0.9169 0.5921 0.4763
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_164
+translation -14.209587 12.648348 3.900815
+rotation 0.000000 0.000000 0.000000
+scale 0.574903 0.574903 0.574903
+diffuse 0.1933 0.3833 0.0531
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_165
+translation 5.723966 5.311763 3.227901
+rotation 0.000000 0.000000 0.000000
+scale 1.462086 1.462086 1.462086
+diffuse 0.2429 0.5032 0.5636
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_166
+translation -7.161647 -6.028239 3.100565
+rotation 0.000000 0.000000 0.000000
+scale 1.487805 1.487805 1.487805
+diffuse 0.8565 0.3183 0.1540
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_167
+translation 6.463001 13.574861 4.560046
+rotation 0.000000 0.000000 0.000000
+scale 1.427584 1.427584 1.427584
+diffuse 0.9002 0.6712 0.9955
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_168
+translation 14.898253 6.635321 1.973645
+rotation 0.000000 0.000000 0.000000
+scale 0.822963 0.822963 0.822963
+diffuse 0.8880 0.2618 0.5204
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_169
+translation -2.852033 13.713207 2.323190
+rotation 0.000000 0.000000 0.000000
+scale 0.922609 0.922609 0.922609
+diffuse 0.8733 0.3709 0.7579
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_170
+translation -12.002011 2.115008 1.453052
+rotation 0.000000 0.000000 0.000000
+scale 0.754922 0.754922 0.754922
+diffuse 0.4871 0.1261 0.3366
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_171
+translation -2.470359 5.417161 3.178536
+rotation 0.000000 0.000000 0.000000
+scale 0.779283 0.779283 0.779283
+diffuse 0.2272 0.4397 0.4654
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_172
+translation -10.334574 3.625624 3.674517
+rotation 0.000000 0.000000 0.000000
+scale 1.122007 1.122007 1.122007
+diffuse 0.1486 0.4551 0.2714
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_173
+translation -14.386303 -4.053341 2.333930
+rotation 0.000000 0.000000 0.000000
+scale 1.391333 1.391333 1.391333
+diffuse 0.3856 0.5658 0.4058
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_174
+translation -3.298470 7.140919 3.137806
+rotation 0.000000 0.000000 0.000000
+scale 0.736246 0.736246 0.736246
+diffuse 0.1046 0.2920 0.2428
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_175
+translation 14.182401 -0.788582 0.562684
+rotation 0.000000 0.000000 0.000000
+scale 0.860742 0.860742 0.860742
+diffuse 0.3610 0.5215 0.5105
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_176
+translation -7.687325 12.023612 2.104187
+rotation 0.000000 0.000000 0.000000
+scale 1.201474 1.201474 1.201474
+diffuse 0.6090 0.5561 0.8147
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_177
+translation -2.648332 9.059532 4.456632
+rotation 0.000000 0.000000 0.000000
+scale 0.614010 0.614010 0.614010
+diffuse 0.8125 0.3962 0.2070
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_178
+translation 13.915319 3.064349 1.718675
+rotation 0.000000 0.000000 0.000000
+scale 1.079880 1.079880 1.079880
+diffuse 0.0192 0.4289 0.8108
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_179
+translation -8.616416 -2.142232 0.838266
+rotation 0.000000 0.000000 0.000000
+scale 1.123631 1.123631 1.123631
+diffuse 0.8968 0.3577 0.6150
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_180
+translation 2.987192 0.124981 3.667410
+rotation 0.000000 0.000000 0.000000
+scale 0.551446 0.551446 0.551446
+diffuse 0.1765 0.0178 0.8595
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_181
+translation -5.248260 14.316676 0.734095
+rotation 0.000000 0.000000 0.000000
+scale 1.020426 1.020426 1.020426
+diffuse 0.2927 0.9307 0.3322
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_182
+translation -8.377501 0.574767 1.887012
+rotation 0.000000 0.000000 0.000000
+scale 1.016293 1.016293 1.016293
+diffuse 0.0632 0.5833 0.1661
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_183
+translation -10.287999 10.059334 3.906777
+rotation 0.000000 0.000000 0.000000
+scale 0.527862 0.527862 0.527862
+diffuse 0.9643 0.6165 0.1284
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_184
+translation -10.722020 -6.568789 3.412792
+rotation 0.000000 0.000000 0.000000
+scale 0.852519 0.852519 0.852519
+diffuse 0.1816 0.5646 0.1720
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_185
+translation 10.743874 -5.417868 3.785996
+rotation 0.000000 0.000000 0.000000
+scale 0.663177 0.663177 0.663177
+diffuse 0.0465 0.8647 0.6612
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_186
+translation -8.349583 -4.385640 2.193882
+rotation 0.000000 0.000000 0.000000
+scale 0.791558 0.791558 0.791558
+diffuse 0.2923 0.7430 0.2837
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_187
+translation -13.027424 2.858114 4.424436
+rotation 0.000000 0.000000 0.000000
+scale 1.383976 1.383976 1.383976
+diffuse 0.4499 0.6005 0.6989
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_188
+translation 2.981947 -2.687270 3.668777
+rotation 0.000000 0.000000 0.000000
+scale 1.035638 1.035638 1.035638
+diffuse 0.2716 0.1002 0.0163
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_189
+translation -3.216676 2.390506 3.324376
+rotation 0.000000 0.000000 0.000000
+scale 1.032788 1.032788 1.032788
+diffuse 0.5564 0.8224 0.6759
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_190
+translation 14.126801 11.724636 4.513198
+rotation 0.000000 0.000000 0.000000
+scale 0.832007 0.832007 0.832007
+diffuse 0.0935 0.8701 0.1645
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_191
+translation -8.573897 -7.143323 4.739834
+rotation 0.000000 0.000000 0.000000
+scale 1.058114 1.058114 1.058114
+diffuse 0.3626 0.1996 0.1412
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_192
+translation -11.542183 9.017031 0.584916
+rotation 0.000000 0.000000 0.000000
+scale 0.833380 0.833380 0.833380
+diffuse 0.2965 0.6937 0.8464
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_193
+translation 2.955640 6.568930 2.703281
+rotation 0.000000 0.000000 0.000000
+scale 1.135753 1.135753 1.135753
+diffuse 0.2914 0.8694 0.3912
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_194
+translation 1.169339 -5.029199 4.557102
+rotation 0.000000 0.000000 0.000000
+scale 0.934676 0.934676 0.934676
+diffuse 0.4418 0.4604 0.9466
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_195
+translation 2.626163 8.862438 1.793189
+rotation 0.000000 0.000000 0.000000
+scale 0.600054 0.600054 0.600054
+diffuse 0.7680 0.8176 0.9759
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_196
+translation 2.760528 2.285659 2.377670
+rotation 0.000000 0.000000 0.000000
+scale 1.433981 1.433981 1.433981
+diffuse 0.1748 0.7572 0.8984
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_197
+translation -1.535853 2.836353 1.355464
+rotation 0.000000 0.000000 0.000000
+scale 0.825593 0.825593 0.825593
+diffuse 0.1763 0.8699 0.1949
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_198
+translation -6.585660 -0.665500 1.231782
+rotation 0.000000 0.000000 0.000000
+scale 1.035258 1.035258 1.035258
+diffuse 0.1559 0.4939 0.2575
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_199
+translation -11.190869 -5.075539 2.249248
+rotation 0.000000 0.000000 0.000000
+scale 1.380553 1.380553 1.380553
+diffuse 0.9050 0.0102 0.7816
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+

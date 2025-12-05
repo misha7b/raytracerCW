@@ -1,0 +1,66 @@
+BEGIN_PLANE
+PLANE Blue_Plane
+vertex -5.000000 -5.000000 0.000000
+vertex 5.000000 -5.000000 0.000000
+vertex -5.000000 5.000000 0.000000
+vertex 5.000000 5.000000 0.000000
+diffuse 0.0000 0.0000 1.0000
+specular 1.0000 1.0000 1.0000
+shininess 47.8753
+roughness 0.2000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_PLANE
+
+BEGIN_CAMERA
+CAMERA Camera
+location 7.358891 -6.925791 6.539972
+gaze -0.651558 0.614170 -0.445271
+up -0.324013 0.305421 0.895396
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 1920 1080
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 0.0
+END_CAMERA
+
+BEGIN_CUBE
+CUBE Green_Cube
+translation -3.000000 0.000000 1.000000
+rotation 0.000000 0.429861 0.579203
+scale 1.000000 1.000000 2.339756
+diffuse 0.0000 1.0000 0.0000
+specular 1.0000 1.0000 1.0000
+shininess 47.8753
+roughness 0.2000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_CUBE
+
+BEGIN_LIGHT
+LIGHT Light
+location 4.076245 1.005454 5.903862
+intensity 1000.000000
+radius 0.100000
+END_LIGHT
+
+BEGIN_SPHERE
+SPHERE Red_Sphere
+translation 3.000000 0.000000 1.000000
+rotation 0.303921 1.123219 -1.575734
+scale 2.065956 1.255639 2.619526
+diffuse 1.0000 0.0000 0.0000
+specular 1.0000 1.0000 1.0000
+shininess 47.8753
+roughness 0.2000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+

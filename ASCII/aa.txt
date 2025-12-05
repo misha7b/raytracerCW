@@ -1,0 +1,51 @@
+BEGIN_CAMERA
+CAMERA Camera
+location -7.960151 -0.092735 7.266304
+gaze 0.766044 -0.000000 -0.642788
+up 0.642788 -0.000000 0.766044
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 800 600
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 0.0
+END_CAMERA
+
+BEGIN_PLANE
+PLANE Ground_Plane
+vertex -15.000000 -15.000000 0.000000
+vertex 15.000000 -15.000000 0.000000
+vertex -15.000000 15.000000 0.000000
+vertex 15.000000 15.000000 0.000000
+diffuse 1.0000 1.0000 1.0000
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_PLANE
+
+BEGIN_LIGHT
+LIGHT Light
+location 8.000000 5.000000 10.000000
+intensity 10000.000000
+radius 0.000000
+END_LIGHT
+
+BEGIN_SPHERE
+SPHERE Shadow_Caster_Sphere
+translation 0.000000 0.000000 1.500000
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 0.8000 0.0500 0.0500
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+

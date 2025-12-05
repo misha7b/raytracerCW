@@ -1,0 +1,81 @@
+BEGIN_CAMERA
+CAMERA Camera
+location 0.000000 0.000000 10.883859
+gaze 0.000000 0.000000 -1.000000
+up 0.000000 1.000000 0.000000
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 1920 1080
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 0.0
+END_CAMERA
+
+BEGIN_LIGHT
+LIGHT Light
+location 4.000000 4.000000 4.000000
+intensity 200.000000
+radius 0.000000
+END_LIGHT
+
+BEGIN_SPHERE
+SPHERE Sphere_Blue_Polished
+translation 2.200000 0.000000 0.000000
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 0.1000 0.1000 0.7000
+specular 1.0000 1.0000 1.0000
+shininess 1000.0000
+roughness 0.0435
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_Green_Plastic
+translation 0.000000 0.000000 0.000000
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 0.1000 0.7000 0.1000
+specular 0.8000 0.8000 0.8000
+shininess 100.0000
+roughness 0.1397
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_Red_Rubber
+translation -2.200000 0.000000 0.000000
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 0.7000 0.1000 0.1000
+specular 0.3000 0.3000 0.3000
+shininess 10.0000
+roughness 0.4081
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_PLANE
+PLANE Wall_Plane_Background
+vertex -7.500000 -7.500000 -5.000000
+vertex 7.500000 -7.500000 -5.000000
+vertex -7.500000 7.500000 -5.000000
+vertex 7.500000 7.500000 -5.000000
+diffuse 0.2000 0.2000 0.2000
+specular 0.0000 0.0000 0.0000
+shininess 1.0000
+roughness 0.8164
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_PLANE
+

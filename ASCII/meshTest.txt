@@ -1,31 +1,24 @@
 BEGIN_CAMERA
-  location 0 2 5
-  gaze 0 -0.2 -1
+  location 0 5 13
+  gaze 0 -0.3 -1
   up 0 1 0
   focal_length 0.05
   sensor_size 0.036 0.024
-  resolution 500 500
+  resolution 1920 1080
 END_CAMERA
 
 BEGIN_LIGHT
   location 3 5 5
-  intensity 50.0
+  intensity 200.0
   radius 0.5
 END_LIGHT
 
 BEGIN_MESH
   file sculpture.obj
   translation 0 0 0
-  scale 1.0
-  diffuse 0.2 0.8 0.2
-  roughness 0.3
+  rotation -1.57 0 0 
+  scale 0.1      
+  diffuse 0.9 0.9 0.9  
+  roughness 0.4
+  texture marble.ppm
 END_MESH
-
-BEGIN_PLANE
-  vertex -5 -1 -5
-  vertex 5 -1 -5
-  vertex 5 -1 5
-  vertex -5 -1 5
-  diffuse 0.7 0.7 0.7
-  roughness 0.8
-END_PLANE

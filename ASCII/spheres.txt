@@ -1,0 +1,81 @@
+BEGIN_CAMERA
+CAMERA Camera
+location 9.017919 -7.737804 6.903575
+gaze -0.651558 0.614170 -0.445271
+up -0.324013 0.305421 0.895396
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 1920 1080
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 0.0
+END_CAMERA
+
+BEGIN_PLANE
+PLANE Floor_Plane
+vertex -15.000000 -15.000000 0.000000
+vertex 15.000000 -15.000000 0.000000
+vertex -15.000000 15.000000 0.000000
+vertex 15.000000 15.000000 0.000000
+diffuse 0.2000 0.2000 0.2000
+specular 1.0000 1.0000 1.0000
+shininess 20.1976
+roughness 0.3000
+reflectivity 0.5000
+transparency 0.0000
+ior 1.0000
+texture none
+END_PLANE
+
+BEGIN_LIGHT
+LIGHT Main_Light
+location 2.000000 -5.000000 8.000000
+intensity 800.000000
+radius 2.000000
+END_LIGHT
+
+BEGIN_SPHERE
+SPHERE Sphere_Mirror
+translation -4.000000 0.000000 1.500000
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 0.8000 0.0500 0.0500
+specular 1.0000 1.0000 1.0000
+shininess 1000.0000
+roughness 0.0000
+reflectivity 0.5000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_Rough
+translation 4.000000 0.000000 1.500000
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 0.0500 0.0500 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 3.5540
+roughness 0.6000
+reflectivity 0.5000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_SPHERE
+SPHERE Sphere_SemiGloss
+translation 0.000000 0.000000 1.500000
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 0.0500 0.8000 0.0500
+specular 1.0000 1.0000 1.0000
+shininess 29.9489
+roughness 0.2500
+reflectivity 0.5000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+

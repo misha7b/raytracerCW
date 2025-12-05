@@ -1,0 +1,103 @@
+BEGIN_CAMERA
+CAMERA Camera
+location 6.860704 -7.418581 5.813419
+gaze -0.651558 0.614170 -0.445271
+up -0.324013 0.305421 0.895396
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 1920 1080
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 0.0
+END_CAMERA
+
+BEGIN_CUBE
+CUBE Cube
+translation -1.072515 -2.798025 2.283107
+rotation -0.387193 0.589449 -0.632883
+scale 0.878618 0.564003 0.281699
+diffuse 1.0000 0.1000 0.1000
+specular 1.0000 1.0000 1.0000
+shininess 767.2307
+roughness 0.0500
+reflectivity 0.3000
+transparency 0.0000
+ior 1.0000
+texture none
+END_CUBE
+
+BEGIN_CUBE
+CUBE Cube.001
+translation -1.465314 -0.003855 0.840652
+rotation 0.000000 -0.000000 2.154974
+scale 3.261316 1.000000 0.312844
+diffuse 0.1000 0.1000 1.0000
+specular 1.0000 1.0000 1.0000
+shininess 3998.0001
+roughness 0.0200
+reflectivity 0.5000
+transparency 0.0000
+ior 1.0000
+texture none
+END_CUBE
+
+BEGIN_CUBE
+CUBE Cube.002
+translation 0.806486 0.400807 1.873812
+rotation 0.255028 -0.420194 -0.568660
+scale 0.878618 0.564003 0.281699
+diffuse 0.1000 1.0000 0.1000
+specular 1.0000 1.0000 1.0000
+shininess 196.0198
+roughness 0.1000
+reflectivity 0.2000
+transparency 0.0000
+ior 1.0000
+texture none
+END_CUBE
+
+BEGIN_LIGHT
+LIGHT Light
+location 4.076245 1.005454 5.903862
+intensity 1000.000000
+radius 0.100000
+END_LIGHT
+
+BEGIN_LIGHT
+LIGHT Light.001
+location -3.016263 -4.289032 4.633554
+intensity 1000.000000
+radius 0.100000
+END_LIGHT
+
+BEGIN_SPHERE
+SPHERE Mball
+translation -1.311410 -0.176332 2.089246
+rotation 0.399722 -0.000000 0.000000
+scale 0.452343 0.758895 0.452343
+diffuse 0.0000 0.0000 0.0000
+specular 1.0000 1.0000 1.0000
+shininess 1000.0000
+roughness 0.0000
+reflectivity 1.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_SPHERE
+
+BEGIN_PLANE
+PLANE Plane
+vertex -8.082852 -8.082852 0.000000
+vertex 8.082852 -8.082852 0.000000
+vertex -8.082852 8.082852 0.000000
+vertex 8.082852 8.082852 0.000000
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 32.0000
+roughness 0.0000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture none
+END_PLANE
+

@@ -210,6 +210,25 @@ with open(output_path, 'w') as file:
             write_material(file, obj)
                 
             file.write("END_PLANE\n\n")
+            
+        elif obj.type == "MESH" and "obj" in obj.name.lower():
+
+            loc = obj.location
+            rot = obj.rotation_euler
+
+            scale = obj.scale.x 
+            
+            mesh_filename = obj.name + ".obj"
+            
+            file.write("BEGIN_MESH\n")
+            file.write(f"file {mesh_filename}\n")
+            file.write(f"translation {loc.x:.6f} {loc.y:.6f} {loc.z:.6f}\n")
+            file.write(f"rotation {rot.x:.6f} {rot.y:.6f} {rot.z:.6f}\n")
+            file.write(f"scale {scale:.6f}\n")
+            
+            write_material(file, obj)
+            
+            file.write("END_MESH\n\n")
 
 
     

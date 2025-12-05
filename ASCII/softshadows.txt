@@ -1,0 +1,73 @@
+BEGIN_CAMERA
+CAMERA Camera
+location -0.159076 -8.000000 4.567466
+gaze 0.000000 0.906308 -0.422618
+up 0.000000 0.422618 0.906308
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 1920 1080
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 9.0
+END_CAMERA
+
+BEGIN_PLANE
+PLANE floor_plane
+vertex -6.000000 -6.000000 0.000000
+vertex 6.000000 -6.000000 0.000000
+vertex -6.000000 6.000000 0.000000
+vertex 6.000000 6.000000 0.000000
+diffuse 0.3000 0.3000 0.3000
+specular 0.1000 0.1000 0.1000
+shininess 1.1245
+roughness 0.8000
+reflectivity 0.1000
+transparency 0.0000
+ior 1.0000
+texture none
+END_PLANE
+
+BEGIN_SPHERE
+SPHERE glass_sphere
+translation 1.500000 0.000000 1.123102
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 1.0000 1.0000 1.0000
+specular 1.0000 1.0000 1.0000
+shininess 1000.0000
+roughness 0.0000
+reflectivity 0.1000
+transparency 1.0000
+ior 1.5200
+texture none
+END_SPHERE
+
+BEGIN_CUBE
+CUBE shiny_cube
+translation -1.500000 0.000000 1.150295
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 0.8000 0.1000 0.1000
+specular 1.0000 1.0000 1.0000
+shininess 47.8753
+roughness 0.2000
+reflectivity 0.3000
+transparency 0.0000
+ior 1.0000
+texture none
+END_CUBE
+
+BEGIN_LIGHT
+LIGHT Soft_Shadow_Light
+location -5.960027 2.262663 3.963406
+intensity 1000.000000
+radius 1.500000
+END_LIGHT
+
+BEGIN_LIGHT
+LIGHT Soft_Shadow_Light.001
+location 4.000000 -4.000000 5.105303
+intensity 1000.000000
+radius 1.500000
+END_LIGHT
+

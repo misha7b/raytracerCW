@@ -1,0 +1,81 @@
+BEGIN_CAMERA
+CAMERA Camera
+location 7.358891 -6.925791 7.338214
+gaze -0.651558 0.614170 -0.445271
+up -0.324013 0.305421 0.895396
+focal_length 50.000000
+sensor_size 36.000000 24.000000
+resolution 1920 1080
+velocity 0.0 0.0 0.0
+aperture 0.0
+focal_distance 0.0
+END_CAMERA
+
+BEGIN_CUBE
+CUBE Glass_Cube.002
+translation -1.232635 2.881052 2.231886
+rotation 0.000000 -0.000000 -0.193190
+scale 1.102871 1.102871 1.102871
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 1000.0000
+roughness 0.0010
+reflectivity 0.1000
+transparency 1.0000
+ior 1.5200
+texture none
+END_CUBE
+
+BEGIN_CUBE
+CUBE Glass_Cube.003
+translation -0.581438 0.061794 1.372363
+rotation 0.000000 -0.000000 -0.193190
+scale 1.102871 1.102871 1.102871
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 1000.0000
+roughness 0.0010
+reflectivity 0.1000
+transparency 1.0000
+ior 1.5200
+texture none
+END_CUBE
+
+BEGIN_SPHERE
+SPHERE Glass_Sphere
+translation -4.022075 -0.227555 2.553405
+rotation 0.000000 0.000000 0.000000
+scale 1.000000 1.000000 1.000000
+diffuse 0.8000 0.8000 0.8000
+specular 1.0000 1.0000 1.0000
+shininess 1000.0000
+roughness 0.0010
+reflectivity 0.1000
+transparency 1.0000
+ior 1.3300
+texture none
+END_SPHERE
+
+BEGIN_LIGHT
+LIGHT Light
+location -3.257379 2.933615 7.008484
+intensity 1000.000000
+radius 0.100000
+END_LIGHT
+
+BEGIN_PLANE
+PLANE Plane
+vertex -19.605774 -19.605774 0.000000
+vertex 19.605774 -19.605774 0.000000
+vertex -19.605774 19.605774 0.000000
+vertex 19.605774 19.605774 0.000000
+diffuse 0.2000 0.8000 0.2000
+specular 0.8000 0.8000 0.8000
+shininess 5.9968
+roughness 0.5000
+reflectivity 0.0000
+transparency 0.0000
+ior 1.0000
+texture 
+END_PLANE
+
