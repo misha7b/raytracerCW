@@ -1,17 +1,16 @@
-# CGR 2025 Raytracer — README
-
-A modular Whitted-style raytracer written in C++17 for the CGR 2025 coursework.
+# CGR 2025 Raytracer
 
 ## Build
 ```bash
 make raytracer
+```
 
 ## Run
 ```bash
 ./raytracer -i scene.txt -o output.ppm
+```
 
 ## Command-Line Options
-
 ```bash
 - -i <file> — input scene
 - -o <file> — output PPM
@@ -25,6 +24,7 @@ make raytracer
 - -exposure <x> — exposure multiplier
 - -tonemap <none|reinhard|aces> — tone mapping
 - --help — list options
+```
 
 ![Glass render](Output/glass.png)
 ![Glass render](Output/glass2.png)
