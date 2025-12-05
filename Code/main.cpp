@@ -21,6 +21,7 @@ void printUsage(const char* progName) {
               << "  -spp <int>       Samples per pixel (default: 1)\n"
               << "  -d <int>         Max recursion depth (default: 3)\n"
               << "  -no-bvh          Disable BVH acceleration\n"
+              << "  -no-shading      Disable lighting calculations (flat color only)\n"
               << "  --shadow-samples <int> Number of shadow rays for distributed RT\n"
               << "  --glossy-samples <int> Number of reflection rays for glossy materials\n"
               << "  -exposure <val>  Exposure multiplier (default: 1.0)\n";
@@ -78,6 +79,9 @@ RenderConfig parseArguments(int argc, char* argv[]) {
         }
         else if (strcmp(argv[i], "-no-bvh") == 0) {
             config.useBVH = false;
+        }
+        else if (strcmp(argv[i], "-no-shading") == 0) {
+            config.noShading = true;
         }
         else if (strcmp(argv[i], "--shadow-samples") == 0 && i + 1 < argc) {
     config.shadowSamples = std::stoi(argv[++i]);

@@ -10,11 +10,21 @@ class Triangle : public Shape {
 public:
     Vector3 v0, v1, v2; 
     Vector3 normal;
+    Vector3 n0, n1, n2; // optional per-vertex normals
+    bool smooth = false;
 
     Triangle(const Vector3& a, const Vector3& b, const Vector3& c)
         : v0(a), v1(b), v2(c)
     {
         // Compute normal
+        normal = (v1 - v0).cross(v2 - v0);
+        normal.normalize();
+    }
+
+    Triangle(const Vector3& a, const Vector3& b, const Vector3& c,
+             const Vector3& na, const Vector3& nb, const Vector3& nc)
+        : v0(a), v1(b), v2(c), n0(na), n1(nb), n2(nc), smooth(true)
+    {
         normal = (v1 - v0).cross(v2 - v0);
         normal.normalize();
     }
@@ -56,7 +66,14 @@ public:
         hit.t = t;
         hit.point = p;
         hit.normal = normal;
-        
+
+        // If smooth shading is available, interpolate vertex normals
+        if (smooth) {
+            float w = 1.0f - u - v;
+            hit.normal = (n0 * w) + (n1 * u) + (n2 * v);
+            hit.normal.normalize();
+        }
+
         // Flip normal if ray hits the backface
         if (denom > 0.0f) hit.normal = -hit.normal;
 

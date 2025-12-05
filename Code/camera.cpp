@@ -1,9 +1,10 @@
-#include "camera.h"
+
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
+#include <fstream>
 
-#include "utils.h"
+#include "camera.h"
 
 static void sampleUnitDisk(float& x, float& y, int gridX, int gridY, int gridSize) {
     float cellSize = 1.0f / static_cast<float>(gridSize);
@@ -74,11 +75,17 @@ bool Camera::readFromFile(const std::string& filename) {
                 file >> gaze.x >> gaze.y >> gaze.z;
             } else if (label == "up") {
                 file >> cameraUp.x >> cameraUp.y >> cameraUp.z;
-            } else if (label == "focal_length") {
-                file >> focalLength;
-            } else if (label == "sensor_size") {
+            }    
+            else if (label == "sensor_size") {
                 file >> sensorWidth >> sensorHeight;
-            } else if (label == "resolution") {
+                sensorWidth  /= 1000.0f;
+                sensorHeight /= 1000.0f;
+            }
+            else if (label == "focal_length") {
+                file >> focalLength;
+                focalLength /= 1000.0f;
+            }
+            else if (label == "resolution") {
                 file >> resolutionX >> resolutionY;
             }
             else if (label == "aperture") {
@@ -126,11 +133,14 @@ Ray Camera::pixelToRay(float px, float py, int sX, int sY, int gridSide) const {
     // Normalized coordinates in [-0.5, 0.5]
     float u = u_normalized - 0.5f;
     float v = 0.5f - v_normalized;
+    
 
     // Scale by sensor size
     float aspectRatio = (float)resolutionX / (float)resolutionY;
     float worldX_offset = u * sensorWidth;
     float worldY_offset = v * (sensorWidth / aspectRatio);
+    //float worldY_offset = v * sensorHeight;
+
 
     Vector3 currentPos = location;
 

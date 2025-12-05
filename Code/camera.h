@@ -27,11 +27,11 @@ public:
 
     bool readFromFile(const std::string& filename);
 
+    void calculateBasis();
+
     Ray pixelToRay(float px, float py, int sX, int sY, int gridSide) const;
 
 private:
-
-    void calculateBasis();
 
     Vector3 right;
     Vector3 up;

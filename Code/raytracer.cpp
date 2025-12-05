@@ -5,11 +5,11 @@
 #include <random>
 
 #include "raytracer.h"
-#include "utils.h"
+#include "maths.h"
 
 const float SHADOW_BIAS = 0.001;
 const float REFLECTION_BIAS = 0.001;
-const Vector3 BACKGROUND_COLOR(0.02f, 0.02f, 0.02f);
+const Vector3 BACKGROUND_COLOR(0.3f, 0.3f, 0.3f);
 
 // Sample a random point on light source
 Vector3 samplePointOnLight(const Light& light, const Vector3& target, int gridX, int gridY, int gridSize) {
@@ -129,7 +129,9 @@ Vector3 computeShadowFactor(
             float dist = L.length();
             L.normalize();
 
-            Ray shadowRay(origin + L * SHADOW_BIAS, L);
+            Vector3 n = normal;
+            n.normalize();
+            Ray shadowRay(origin + n * SHADOW_BIAS, L);
 
             Vector3 rayThroughput(1.0f, 1.0f, 1.0f);
             bool blocked = false;
@@ -209,6 +211,10 @@ Vector3 Raytracer::shade(const Ray& ray, const HitInfo& hit, int depth) const {
         );
 
         diffuseColor = diffuseColor * textureColour; 
+    }
+
+    if (config.noShading) {
+        return diffuseColor;
     }
     
     // Ambient term

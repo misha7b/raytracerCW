@@ -16,6 +16,8 @@ struct RenderConfig {
     int glossySamples = 1; 
 
     float exposure = 1.0f;
+
+    bool noShading = false; 
     
     std::string inputScene = "Test1.txt";
     std::string outputImage = "output.ppm";

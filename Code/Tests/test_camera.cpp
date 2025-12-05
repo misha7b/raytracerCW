@@ -1,5 +1,6 @@
 #include "../camera.h"
 #include <iostream>
+#include <string>
 
 void printRayInfo(const std::string& label, const Ray& ray) {
     std::cout << label << ":\n";
@@ -14,7 +15,7 @@ int main()
     Camera camera;
 
     // Load camera from exported file
-    if (!camera.readFromFile("../ASCII/test.txt")) {
+    if (!camera.readFromFile("../ASCII/Test1.txt")) {
         std::cerr << "Failed to load camera!" << std::endl;
         return 1;
     }
@@ -34,7 +35,7 @@ int main()
     std::cout << "\n";
 
     Ray centerRay = camera.pixelToRay(camera.resolutionX / 2.0f,
-                                      camera.resolutionY / 2.0f);
+                                      camera.resolutionY / 2.0f, 0, 0, 1);
     printRayInfo("Center Pixel Ray", centerRay);
 
     
@@ -42,19 +43,19 @@ int main()
     const float lastPy = static_cast<float>(camera.resolutionY - 1);
 
     // Test Top-Left Corner (0, 0)
-    Ray tlRay = camera.pixelToRay(0.0f, 0.0f);
+    Ray tlRay = camera.pixelToRay(0.0f, 0.0f, 0, 0, 1);
     printRayInfo("Top-Left Corner (0, 0)", tlRay);
 
     // Test Top-Right Corner (1919, 0)
-    Ray trRay = camera.pixelToRay(lastPx, 0.0f);
+    Ray trRay = camera.pixelToRay(lastPx, 0.0f, 0, 0, 1);
     printRayInfo("Top-Right Corner (" + std::to_string((int)lastPx) + ", 0)", trRay);
 
     // Test Bottom-Left Corner (, 0, 1079)
-    Ray blRay = camera.pixelToRay(0.0f, lastPy);
+    Ray blRay = camera.pixelToRay(0.0f, lastPy, 0, 0, 1);
     printRayInfo("Bottom-Left Corner (0, " + std::to_string((int)lastPy) + ")", blRay);
 
     // Test Bottom-Right Corner (1919, 1079)
-    Ray brRay = camera.pixelToRay(lastPx, lastPy);
+    Ray brRay = camera.pixelToRay(lastPx, lastPy, 0, 0, 1);
     printRayInfo("Bottom-Right Corner (" + std::to_string((int)lastPx) + ", " + std::to_string((int)lastPy) + ")", brRay);
 
     return 0;
