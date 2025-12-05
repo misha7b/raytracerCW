@@ -32,3 +32,5 @@ make raytracer
 - Soft shadows & glossy reflections
 - Motion blur & depth of field
 - ACES/Reinhard tone mapping & gamma correction
+
+![Glass render](Output/glass.png)
