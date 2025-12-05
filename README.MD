@@ -22,15 +22,6 @@ make raytracer
 - -tonemap <none|reinhard|aces> — tone mapping
 - --help — list options
 
-## Features
-- Camera system, PPM I/O
-- Sphere, cube, plane, triangle intersection
-- BVH acceleration
-- Blinn–Phong shading, reflections, refractions
-- Stratified supersampling AA
-- Texture mapping
-- Soft shadows & glossy reflections
-- Motion blur & depth of field
-- ACES/Reinhard tone mapping & gamma correction
-
 ![Glass render](Output/glass.png)
+![Glass render](Output/glass2.png)
+![Glass render](Output/glass3.png)
