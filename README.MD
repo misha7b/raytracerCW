@@ -1,35 +1,34 @@
-# C++ Raytracer
+# CGR 2025 Raytracer — README
 
----
+A modular Whitted-style raytracer written in C++17 for the CGR 2025 coursework.
 
-## Overview
+## Build
+make raytracer
 
-A modular, Whitted-style raytracer written in **C++17** from scratch.  
-This project implements:
+## Run
+./raytracer -i scene.txt -o output.ppm
 
-- Recursive ray tracing  
-- BVH acceleration  
-- Texture mapping  
-- Distributed effects:
-  - Soft shadows  
-  - Glossy reflections  
-  - Motion blur  
-  - Depth of field  
+## Command-Line Options
+- -i <file> — input scene
+- -o <file> — output PPM
+- -w, -h — override resolution
+- -spp <N> — antialiasing samples
+- -d <N> — recursion depth
+- -no-bvh — disable BVH
+- -no-shading — disable shading
+- --shadow-samples <N> — soft shadows
+- --glossy-samples <N> — glossy reflections
+- -exposure <x> — exposure multiplier
+- -tonemap <none|reinhard|aces> — tone mapping
+- --help — list options
 
----
-
-## Dependencies
-
-- **Compiler:** g++ with C++17 support  
-- **Build System:** GNU Make  
-- **Libraries:** C++ Standard Library
-
----
-
-## Compilation
-
-From the `Code` directory:
-
-```bash
-cd Code
-make
+## Features
+- Camera system, PPM I/O
+- Sphere, cube, plane, triangle intersection
+- BVH acceleration
+- Blinn–Phong shading, reflections, refractions
+- Stratified supersampling AA
+- Texture mapping
+- Soft shadows & glossy reflections
+- Motion blur & depth of field
+- ACES/Reinhard tone mapping & gamma correction
