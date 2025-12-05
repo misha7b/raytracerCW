@@ -114,6 +114,7 @@ public:
         Vector3 n_world = rotation * n_local;
         n_world.normalize();
 
+        // Update HitInfo
         hit.hit    = true;
         hit.t      = t_hit;
         hit.point  = p_world;

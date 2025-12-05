@@ -24,7 +24,8 @@ void printUsage(const char* progName) {
               << "  -no-shading      Disable lighting calculations (flat color only)\n"
               << "  --shadow-samples <int> Number of shadow rays for distributed RT\n"
               << "  --glossy-samples <int> Number of reflection rays for glossy materials\n"
-              << "  -exposure <val>  Exposure multiplier (default: 1.0)\n";
+              << "  -exposure <val>  Exposure multiplier (default: 1.0)\n"
+              << "  -tonemap <mode>  Tone mapping mode: 'none', 'reinhard', 'aces' (default: aces)\n";
 }
 
 
@@ -40,7 +41,8 @@ RenderConfig parseArguments(int argc, char* argv[]) {
     config.width = 0;   // use scene file defaults         
     config.height = 0;  // use scene file defaults 
     config.shadowSamples = 1;  
-    config.exposure = 1.0f;   
+    config.exposure = 1.0f;  
+    config.toneMapping = ToneMappingMode::ACES; 
 
     for (int i = 1; i < argc; ++i) {
 
@@ -92,6 +94,18 @@ RenderConfig parseArguments(int argc, char* argv[]) {
         else if (strcmp(argv[i], "-exposure") == 0 && i + 1 < argc) {
             config.exposure = std::stof(argv[++i]);
         }
+        else if (strcmp(argv[i], "-tonemap") == 0 && i + 1 < argc) {
+                std::string mode = argv[++i];
+                if (mode == "reinhard") {
+                    config.toneMapping = ToneMappingMode::Reinhard;
+                } else if (mode == "none") {
+                    config.toneMapping = ToneMappingMode::None;
+                } else if (mode == "aces") {
+                    config.toneMapping = ToneMappingMode::ACES;
+                } else {
+                    std::cerr << "Unknown tone mapping mode: " << mode << ". Using default (ACES).\n";
+                }
+        }
     }
     return config;
 }
@@ -111,6 +125,13 @@ int main(int argc, char* argv[]) {
     std::cout << "Depth:      " << config.maxDepth << "\n";
     std::cout << "AA Samples: " << config.samplesPerPixel << "\n";
     std::cout << "Exposure:   " << config.exposure << "\n";
+    std::cout << "Tone Map:   ";
+    switch(config.toneMapping) {
+        case ToneMappingMode::None: std::cout << "None"; break;
+        case ToneMappingMode::Reinhard: std::cout << "Reinhard"; break;
+        case ToneMappingMode::ACES: std::cout << "ACES"; break;
+    }
+
     std::cout << "========================================\n";
 
     Camera cam;

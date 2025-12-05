@@ -11,10 +11,10 @@ public:
     Matrix3 rotation;
     Vector3 scale;
     
-    // Calculate rotation matrix
     Sphere(const Vector3& t, const Vector3& eulerRadians, const Vector3& s)
         : translation(t), scale(s)
-    {
+    {   
+        // Calculate rotation matrix
         rotation = Matrix3::fromEuler(eulerRadians.x,
                                       eulerRadians.y,
                                       eulerRadians.z);
@@ -49,7 +49,7 @@ public:
 
         float closest_t = std::numeric_limits<float>::infinity();
 
-        // Choose closest intersectiob
+        // Choose closest intersection
         if (t1 > EPS_HIT && t1 < closest_t) {
             closest_t = t1;
         }

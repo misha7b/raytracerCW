@@ -76,6 +76,6 @@ roughness 0.5000
 reflectivity 0.0000
 transparency 0.0000
 ior 1.0000
-texture 
+texture none
 END_PLANE
 

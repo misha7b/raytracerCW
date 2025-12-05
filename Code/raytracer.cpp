@@ -61,6 +61,19 @@ Vector3 sampleUnitSphere(int gridX, int gridY, int gridSize) {
 
     return Vector3(r * cos(theta), r * sin(theta), z);
 }
+
+// Reinhard
+// C = C / (1 + C)
+Vector3 reinhardToneMapping(const Vector3& x) {
+    return Vector3(
+        x.x / (1.0f + x.x),
+        x.y / (1.0f + x.y),
+        x.z / (1.0f + x.z)
+    );
+}
+
+
+// ACES 
 // https://knarkowicz.wordpress.com/2016/01/06/aces-filmic-tone-mapping-curve/
 Vector3 acesToneMapping(const Vector3& x) {
     const float a = 2.51f;
@@ -410,7 +423,11 @@ void Raytracer::render(Image& img) const {
             pixelColour = pixelColour * config.exposure;
 
             // Tone mapping 
-            pixelColour = acesToneMapping(pixelColour);
+            if (config.toneMapping == ToneMappingMode::Reinhard) {
+                pixelColour = reinhardToneMapping(pixelColour);
+            } else if (config.toneMapping == ToneMappingMode::ACES) {
+                pixelColour = acesToneMapping(pixelColour);
+            } 
 
             // Gamma Correction
             float invGamma = 1.0f / 2.2f;

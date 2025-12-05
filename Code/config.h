@@ -3,6 +3,15 @@
 
 #include <string>
 
+
+// Tone Mapping 
+enum class ToneMappingMode {
+    None,
+    Reinhard,
+    ACES
+};
+
+
 struct RenderConfig {
     // Default settings
     int width = 0;              // use camera default
@@ -16,6 +25,7 @@ struct RenderConfig {
     int glossySamples = 1; 
 
     float exposure = 1.0f;
+    ToneMappingMode toneMapping = ToneMappingMode::ACES;
 
     bool noShading = false; 
     
