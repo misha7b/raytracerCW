@@ -31,6 +31,6 @@ make raytracer
 ```
 
 ![Glass render](Output/glass.png)
-![Glass render](Output/untitled.jpg)
+![Glass render](Output/Untitled.jpg)
 ![Glass render](Output/glass2.png)
 ![Glass render](Output/glass3.png)
