@@ -1,6 +1,8 @@
 # CGR 2025 Raytracer
 
-Export blend files to `bash .txt` file with the `bash export.py` script. Implemented a Whitted-style raytracer, soft shadows, glossy reflections, lens effects and triangle meshes.
+Export blend files to a `.txt` file that the raytracer can read with the `export.py` script. 
+
+Implemented a Whitted-style raytracer, soft shadows, glossy reflections, lens effects and triangle meshes.
 
 ## Build
 ```bash
