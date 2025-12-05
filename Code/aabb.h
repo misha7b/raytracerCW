@@ -63,6 +63,14 @@ struct AABB {
             else if (i == 1) { o = r.origin.y; d = r.direction.y; mi = min.y; ma = max.y; }
             else { o = r.origin.z; d = r.direction.z; mi = min.z; ma = max.z; }
 
+            // Handle rays nearly parallel to slab to avoid inf/NaN
+            if (std::abs(d) < 1e-8f) {
+                // If origin is outside the slab, no hit
+                if (o < mi || o > ma) return false;
+                // Otherwise, this axis does not clip the interval
+                continue;
+            }
+
             float invD = 1.0f / d;
             float t0 = (mi - o) * invD;
             float t1 = (ma - o) * invD;

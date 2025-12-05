@@ -58,7 +58,10 @@ void loadMesh(const std::string& filepath,
             int idx2 = std::stoi(v2_str) - 1;
             int idx3 = std::stoi(v3_str) - 1;
 
-            if (idx1 >= 0 && idx3 < (int)vertices.size()) {
+            if (idx1 >= 0 && idx2 >= 0 && idx3 >= 0 &&
+                idx1 < (int)vertices.size() &&
+                idx2 < (int)vertices.size() &&
+                idx3 < (int)vertices.size()) {
                 faces.push_back({idx1, idx2, idx3});
             }
         }

@@ -78,12 +78,12 @@ bool Camera::readFromFile(const std::string& filename) {
             }    
             else if (label == "sensor_size") {
                 file >> sensorWidth >> sensorHeight;
-                sensorWidth  /= 1000.0f;
-                sensorHeight /= 1000.0f;
+                //sensorWidth  /= 1000.0f;
+                //sensorHeight /= 1000.0f;
             }
             else if (label == "focal_length") {
                 file >> focalLength;
-                focalLength /= 1000.0f;
+                //focalLength /= 1000.0f;
             }
             else if (label == "resolution") {
                 file >> resolutionX >> resolutionY;
