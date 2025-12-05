@@ -3,12 +3,16 @@
 A modular Whitted-style raytracer written in C++17 for the CGR 2025 coursework.
 
 ## Build
+```bash
 make raytracer
 
 ## Run
+```bash
 ./raytracer -i scene.txt -o output.ppm
 
 ## Command-Line Options
+
+```bash
 - -i <file> — input scene
 - -o <file> — output PPM
 - -w, -h — override resolution
